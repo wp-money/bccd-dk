@@ -1,0 +1,113 @@
+
+	
+	
+footer, #topMenu, #mainMenu, #leftColumn, .commentsArea, .jumpToTop, .btnSignUp, .eventsNav, .tabsNav, .rCol, .articleNav, .more, .listPage, .listSearch, .sponsorSlide, #newsPageTop .rCol, .sponsorWideSection, .catSearch, .campaignNav, .formPopup, .loginPopup{
+	display: none;		
+}
+
+header  {
+	margin: 0px 0px 40px 0px;	
+}
+
+h1{
+	margin-top: 0px;	
+}
+
+.logo{
+	float: none;	
+}
+
+header .wrapper{
+	border-bottom: 5px solid #dddddd;
+	height: auto;
+	padding: 20px 0px 40px 0px;	
+}
+
+.tabsContent li{
+	display: block;
+	margin: 0px 0px 30px 0px;	
+}
+
+.eventHeader .info li{
+	padding-left: 0px;	
+}
+
+.wrapper, #sponsorDetails .lCol{
+	float: none;
+	width: auto;
+}
+
+.boardChairman .chairman, .boardChairman .chairman.right, #newsPageTop .lCol .lSide, #newsPageTop .lCol .rSide{
+	border: 0px none;
+	float: none;
+	padding: 0px 0px 0px 0px;
+	margin: 40px 0px 20px 0px;
+	width: auto;
+}
+
+#content, #content.twoCols, .boardChairman, .boardMembersSection, .listLinks.listLinksPage, #newsPageTop .lCol{
+	border: 0px none;
+	box-shadow: 0px 0px 0px #fff;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 20px 0px;
+}
+
+.boardMembers .lCol{
+	display: inline-block;
+	width: auto;
+}
+
+.boardMembers .rCol{
+	float: left;
+	display: block;	
+	margin-left: 150px;
+	
+	width: auto;
+}
+
+.twoCols .col, .twoCols .col.right{
+	float: none;
+	width: auto;	
+}
+
+#content, #content.twoCols, #campaign .body{
+	float: none;
+	width: auto;	
+}
+
+.teaser{
+	float: none;
+	margin-bottom: 30px;	
+}
+
+.listLinks{
+	height: auto !important;	
+}
+
+#campaign{
+	width: auto;
+}
+
+#campaign li{
+	background: none;
+	float: none;	
+}
+
+#campaign{
+	position: static;	
+}
+
+#campaign .body{
+	padding: 0px 0px 0px 0px;	
+}
+
+#campaign .img{
+	float: none;
+}
+
+.campaignSection{
+	box-shadow: 0px 0px 0px #fff;
+	height: auto;
+	overflow: visible;
+}
+

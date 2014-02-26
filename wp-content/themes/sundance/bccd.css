@@ -1,0 +1,3794 @@
+*{
+	}
+
+@font-face {
+    font-family: 'loraregular';
+    src: url('lora-regular-webfont.eot')/*tpa=http://bccd.dk/fonts/lora-regular-webfont.eot*/;
+    src: url('lora-regular-webfont.eot-#iefix')/*tpa=http://bccd.dk/fonts/lora-regular-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url('lora-regular-webfont.woff')/*tpa=http://bccd.dk/fonts/lora-regular-webfont.woff*/ format('woff'),
+         url('lora-regular-webfont.ttf')/*tpa=http://bccd.dk/fonts/lora-regular-webfont.ttf*/ format('truetype'),
+         url('lora-regular-webfont.svg#loraregular')/*tpa=http://bccd.dk/fonts/lora-regular-webfont.svg#loraregular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lorabold';
+    src: url('lora-bold-webfont.eot')/*tpa=http://bccd.dk/css/lora-bold-webfont.eot*/;
+    src: url('lora-bold-webfont.eot-#iefix')/*tpa=http://bccd.dk/css/lora-bold-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url('lora-bold-webfont.woff')/*tpa=http://bccd.dk/css/lora-bold-webfont.woff*/ format('woff'),
+         url('lora-bold-webfont.ttf')/*tpa=http://bccd.dk/css/lora-bold-webfont.ttf*/ format('truetype'),
+         url('lora-bold-webfont.svg#lorabold')/*tpa=http://bccd.dk/css/lora-bold-webfont.svg#lorabold*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lorabold_italic';
+    src: url('lora-bolditalic-webfont.eot')/*tpa=http://bccd.dk/css/lora-bolditalic-webfont.eot*/;
+    src: url('lora-bolditalic-webfont.eot-#iefix')/*tpa=http://bccd.dk/css/lora-bolditalic-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url('lora-bolditalic-webfont.woff')/*tpa=http://bccd.dk/css/lora-bolditalic-webfont.woff*/ format('woff'),
+         url('lora-bolditalic-webfont.ttf')/*tpa=http://bccd.dk/css/lora-bolditalic-webfont.ttf*/ format('truetype'),
+         url('lora-bolditalic-webfont.svg#lorabold_italic')/*tpa=http://bccd.dk/css/lora-bolditalic-webfont.svg#lorabold_italic*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'loraitalic';
+    src: url('lora-italic-webfont.eot')/*tpa=http://bccd.dk/css/lora-italic-webfont.eot*/;
+    src: url('lora-italic-webfont.eot-#iefix')/*tpa=http://bccd.dk/css/lora-italic-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url('lora-italic-webfont.woff')/*tpa=http://bccd.dk/css/lora-italic-webfont.woff*/ format('woff'),
+         url('lora-italic-webfont.ttf')/*tpa=http://bccd.dk/css/lora-italic-webfont.ttf*/ format('truetype'),
+         url('lora-italic-webfont.svg#loraitalic')/*tpa=http://bccd.dk/css/lora-italic-webfont.svg#loraitalic*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* FONT SIZE */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	margin: 10px 0px 20px 22px;
+	padding: 0px 0px 0px 0px;
+}
+
+li{
+	margin: 0px 0px 10px 0px;
+}
+
+p{
+	margin: 0px 0px 10px 0px;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+fieldset{
+	border: 0px none;
+}
+
+sup, sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	font-size: 0.8em;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+a{
+	border: 0px none;
+	color: #4d4db8;
+	text-decoration: none;
+}
+
+img{
+	border: 0px none;
+}
+
+/*   */
+
+body{
+	background: url(pattern.png)/*tpa=http://bccd.dk/images/bccd/pattern.png*/ repeat left top;
+	font-size: 15px;
+	font-family: 'loraregular', Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h1{
+	border-bottom: 1px solid #dddddd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 30px;
+	margin: 0px 0px 20px 0px;
+	padding: 30px 0px 20px 0px;
+}
+
+.wrapper{
+	margin: 0px auto;
+	width: 995px;
+}
+
+
+#content.widePage{
+	background: #fff;
+	padding: 0px 20px 20px 20px;
+}
+
+#content.twoCols.sponsor2Cols{
+	background: none;
+}
+
+#content.twoCols.sponsor2Cols #sponsorDetails{
+	background: none;
+	padding-right: 0px;
+}
+
+#content.twoCols.sponsor2Cols #sponsorDetails .lCol{
+	background: #fff;
+	margin: 0px -20px 0px -20px;
+	padding: 0px 20px 20px 20px;
+}
+
+#content.twoCols.sponsor2Cols #sponsorDetails .rCol{
+	padding: 0px 0px 0px 0px;
+	text-align: right;
+	width: 230px;
+}
+#content table th, #content table td{
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+.threeCols{
+	margin-right: -20px;
+	margin-bottom: 20px;
+}
+
+html{
+	background: url(images/sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ repeat-x 0px -952px #e7e7e7;
+}
+
+header{
+	background: url(images/sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ repeat-x 0px -952px #e7e7e7;
+}
+
+header .wrapper{
+	height: 170px;
+}
+
+.overlay{
+	background: url(images/patternOverlay.png)/*tpa=http://bccd.dk/images/bccd/patternOverlay.png*/ repeat left top;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 4;
+}
+
+#topMenu{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 30px 0px;
+}
+
+.extraMenu{
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.extraMenu li{
+	line-height: 12px;
+	float: left;
+	padding: 8px 10px 10px 10px;
+}
+
+.extraMenu li a{
+	color: #555555;
+	line-height: 12px;
+	padding: 0px 0px 0px 0px;
+}
+
+.extraMenu li.loginSection a{
+	border-right: 0px none;
+	color: #c42625;
+	padding: 0px 0px 0px 0px;
+}
+
+
+
+.socialMediaMenu{
+	float: right;
+	font-size: 10px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.socialMediaMenu li{
+	line-height: 12px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 7px 5px 6px 5px;
+}
+
+.socialMediaMenu li a{
+	color: #555555;
+	line-height: 12px;
+	padding: 0px 0px 0px 0px;
+}
+
+.socialMediaMenu li.loginSection a{
+	border-right: 0px none;
+	padding: 0px 0px 0px 0px;
+}
+
+.logo{
+	float: left;
+}
+
+#mainContent{
+	padding: 30px 0px 0px 0px;
+}
+
+#topHighlightSection{
+	background: #f1f1f1;
+	border: 1px solid #e5e5e5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	padding: 20px 25px 20px 20px;
+	width: 510px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#topHighlightSection p{
+	float: left;
+	margin: 4px 0px 0px 0px;
+	width: 340px;
+}
+
+#topHighlightSection p a{
+	font-weight: bold;
+}
+
+#topHighlightSection .btnSignUp, .btnLoginSubmit, .btnSignOut{
+	background: #ec1a29;
+	border: 0px none;
+	color: #f1f1f1;
+	cursor: pointer;
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 140px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+/*
+.loginPopup{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 3px 4px #333;
+
+	background: #fff;
+	border: 3px solid #9e9e9e;
+	color: #757575;
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	left: 50%;
+	margin: 0px 0px 0px -245px;
+	padding: 30px 35px 30px 35px;
+	position: fixed;
+	top: 200px;
+	z-index: 4;
+	width: 420px;
+}
+
+.loginPopup .loginTitle{
+	color: #313175;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.txtUsername, .txtPassword{
+	border: 1px solid #dddddd;
+	color: #757575;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px 10px 10px 60px;
+	width: 360px;
+}
+
+.txtUsername{
+	background: url(../images/bccd/sprites01.png) no-repeat -305px 6px;
+}
+
+
+.txtPassword{
+	background: url(../images/bccd/sprites01.png) no-repeat -301px -38px;
+}
+
+.loginPopup .lCol{
+	float: left;
+}
+
+.loginPopup .lCol p{
+	margin: 10px 0px 0px 0px;
+}
+
+.loginPopup .lCol p a{
+}
+
+*/
+
+
+
+
+
+
+#mainMenu{
+	background: #9e9e9e;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px 0px 0px 0px;
+}
+
+#mainMenu ul{
+	height: 50px;
+	list-style: none;
+	margin: 0px auto 0px auto;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	width: 995px;
+}
+
+#mainMenu li{
+	float: left;
+	line-height: 50px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#mainMenu ul li a{
+	border-right: 1px solid #cfcfcf;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 50px;
+	padding: 0px 44px 0px 44px;
+	padding: 0px 24px 0px 24px;
+	position: relative;
+	text-transform: uppercase;
+}
+#mainMenu ul li:hover a{
+	background: #fff;
+	border-top: 3px solid #ec1a29;
+	border-bottom: 3px solid #fff;
+	color: #2d2d38;
+	line-height: 44px;
+	z-index: 5;
+}
+
+#mainMenu ul li .menuListNewsEvents a{
+	font-weight: normal;
+}
+
+#mainMenu ul li .menuListNewsEvents .right{
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+#mainMenu ul li .menuListNewsEvents .right img{
+    background: url("images/sprites01.png")/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat scroll -20px -2px transparent;
+    display: inline-block;
+    height: 10px;
+    margin: 0px 5px 0px 0px;
+    width: 10px;
+}
+
+#mainMenu ul li .menuListNewsEvents .right a{
+	font-weight: bold;
+}
+
+#mainMenu ul li.first a{
+	border-left: 1px solid #cfcfcf;
+	border-bottom: 0px none;
+	padding: 0px 20px 0px 20px;
+}
+
+#mainMenu ul li.first:hover a{
+	border-top: 0px none;
+	background: none;
+}
+
+#mainMenu ul li.topSearch{
+	float: right;
+}
+
+#mainMenu ul li fieldset{
+	padding: 10px 0px 0px 0px;
+	height: 30px;
+}
+
+#mainMenu .txtInput{
+	background: #fff;
+	border: 0px none;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	padding: 7px 10px 7px 10px;
+	vertical-align: top;
+	width: 150px;
+}
+
+#mainMenu .btnSearch{
+	background: url(images/sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -222px -21px #fff;
+	border: 0px none;
+	cursor: pointer;
+	height: 30px;
+	padding: 6px 6px 6px 6px;
+	width: 30px;
+	vertical-align: top;
+}
+
+#mainMenu .btnSearch:hover{
+	background-position: -221px -20px;
+}
+
+#mainMenu .subMenu{
+	background: url(images/topMenuBk.png)/*tpa=http://bccd.dk/images/bccd/topMenuBk.png*/ repeat-y right 0px #fff;
+	display: none;
+	left: 0px;
+	padding: 0px 0px 40px 40px;
+	position: absolute;
+	top: 50px;
+	width: 955px;
+	z-index: 5;
+}
+
+#mainMenu li:hover .subMenu{
+	display: block;
+}
+
+#mainMenu ul .subMenu ul{
+	border-top: 1px solid #cfcfcf;
+	float: left;
+	height: auto;
+	margin: 40px 40px 0px 0px;
+	width: 213px;
+}
+
+#mainMenu ul .subMenu li{
+	float: none;
+	border-right: 0px;
+	border-bottom: 1px solid #cfcfcf;
+	margin: 0px 0px 0px 0px;
+}
+
+#mainMenu ul .subMenu li.titleCat {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+}
+
+#mainMenu ul li .subMenu a{
+	border-top: 0px none;
+	background: none;
+	border-right: 0px;
+	border-bottom: 0px none;
+	color: #333333;
+	display: inline;
+	line-height: 1.3;
+	padding: 0px 0px 0px 0px;
+	text-transform: none;
+}
+
+#mainMenu ul li .subMenu li a{
+	border-right: 0px;
+	color: #333333;
+	display: block;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+#mainMenu ul li .subMenu li a:hover{
+	color: #4d4db8;
+}
+
+.menuInfo{
+	background: #eeeeee;
+	float: right;
+	height: 100%;
+	line-height: 1.4;
+	padding: 30px 30px 10px 30px;
+	width: 373px;
+}
+
+.menuInfo .img{
+	margin: 0px 0px 10px 0px;
+	min-height: 95px;
+	position: relative;
+}
+
+.menuInfo .img .date{
+	background: #ec1a29;
+	color: #fff;
+	font-size: 44px;
+	font-weight: bold;
+	line-height: 1;
+	left: 0px;
+	padding: 15px 20px 15px 20px;
+	position: absolute;
+	top: 0px;
+}
+
+.menuInfo .img .date span{
+	display: block;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+}
+
+.menuInfo p{
+	line-height: 1.4;
+	margin: 0px 0px 5px 0px;
+}
+
+.menuInfo .category{
+	color: #9e9e9e;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#mainMenu ul li .menuInfo h2, #mainMenu ul li .menuInfo h2 a{
+	color: #313175;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menuInfo h2 {
+	margin: 0px 0px 10px 0px;
+}
+
+.menuInfo .info {
+	font-size: 15px;
+	margin: 0px 0px 10px 0px;
+}
+
+#mainMenu ul li .menuInfo .info a{
+	font-size: 15px;
+}
+
+.menuInfo .bookNow {
+	color: #757575;
+	font-size: 14px;
+	margin: 0px 0px 10px 0px;
+}
+
+#mainMenu ul li .subMenu .bookNow a{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: #ec1a29;
+	border: 1px solid #9f1f1e;
+	color: #fff;
+	float: right;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+	text-transform: uppercase;
+	top: -5px;
+}
+
+
+/* ///////////////////////////////////// */
+/*            TWOCOLS COLS               */
+/* ///////////////////////////////////// */
+
+.twoCols .col{
+	box-shadow: 1px 1px 1px #cacaca;
+	background: #fff;
+	border: 1px solid #dedede;
+	float: left;
+	margin: 0px 0px 40px 0px;
+	width: 488px;
+}
+
+.twoCols .col.right{
+	box-shadow: 1px 1px 1px #cacaca;
+	float: right;
+}
+
+.bigSpotWrapper{
+	overflow: hidden;
+	width: px;
+}
+
+.bigSpot{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 390px;
+	position: relative;
+	/* */
+	overflow: hidden;
+}
+
+.bigSpot li{
+	float: left;
+	height: 390px;
+	position: relative;
+	width: 448px;
+}
+
+.bigSpot p{
+	font-size: 15px;
+	line-height: 1.6;
+	padding: 0px 60px 0px 0px;
+}
+
+.bigSpot li .more{
+	bottom: 0px;
+	left: 0px;
+	margin: 0px 0px 0px 0px;
+	position: absolute;
+}
+
+.bigSpotSection{
+	padding: 20px 20px 20px 20px;
+	position: relative;
+}
+
+.bigSpotSection h2{
+	color: #313175;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.bigSpotSection h3{
+	color: #4d4db8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.bigSpotSection .info{
+	color: #9e9e9e;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.bigSpotSection .info .iconComment, .info .iconComment, .info .iconChat{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -175px -27px;
+	display: inline-block;
+	height: 11px;
+	margin: 0px 3px 0px 0px;
+	vertical-align: middle;
+	width: 12px;
+}
+
+.bigSpotSection .body{
+	margin: 0px 0px 10px 0px;
+	max-height: 150px;
+}
+
+
+/* ///////////////////////////////////// */
+/*             LIST LINKS                */
+/* ///////////////////////////////////// */
+
+.listLinks.listLinksPage{
+	box-shadow: 1px 1px 1px #cacaca;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding-bottom: 10px;
+}
+
+.listLinks{
+	background: #f6f6f6;
+	border-top: 1px solid #dedede;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px 20px 0px 20px;
+	position: relative;
+}
+
+.twoCols .listLinks{
+	padding-bottom: 40px;
+}
+
+.listLinks h2{
+	color: #313175;
+	font-size: 28px;
+	margin: 0px 0px 8px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.listLinks table{
+	font-size: 12px;
+	margin: 0px 0px 20px 0px;
+	vertical-align: top;
+	width: 100%;
+}
+
+.twoCols .listLinks table{
+	margin-bottom: 40px;
+}
+
+.twoCols .listLinks table th{
+	text-transform: none;
+}
+
+.listLinks th, .listLinks td{
+	border-bottom: 1px solid #dddddd;
+	font-weight: normal;
+	padding: 10px 0px 10px 0px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.listLinks .download{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -200px -24px;
+	display: inline-block;
+	height: 23px;
+	text-indent: -9999px;
+	width: 20px;
+}
+
+.listLinks th{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.listLinks th.tdDate{
+	width: 95px;
+}
+
+.listLinks th.tdTime{
+	width: 60px;
+}
+
+.listLinks th..tdType{
+	padding-right: 20px;
+}
+
+.listLinks .last th, .listLinks .last td{
+	border-bottom: 0px none;
+}
+
+.listLinks td{
+}
+
+.listLinks .more{
+	bottom: 20px;
+	left: 20px;
+	margin: 0px 0px 0px 0px;
+	position: absolute;
+}
+
+
+/* ///////////////////////////////////// */
+/*           EVENTS PAGE TOP             */
+/* ///////////////////////////////////// */
+#eventsPageTop{
+	background: #fff;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 20px 20px 20px;
+
+}
+#eventsPageTop h1{
+	color: #313175;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+#eventsPageTop #eventsSlider{
+
+}
+
+.eventSlide{
+	width: 955px;
+}
+
+.eventSlide .lCol{
+	border-right: 1px solid #dddddd;
+	float: left;
+	padding: 0px 20px 0px 0px;
+	width: 448px;
+}
+
+.eventSlide .rCol{
+	border-left: 1px solid #dddddd;
+	float: left;
+	margin: 0px 0px 0px -1px;
+	padding: 0px 0px 0px 21px;
+	width: 318px;
+}
+
+.eventSlide h2{
+	color: #313175;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.eventSlide .info{
+	color: #9e9e9e;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.eventSlide .info .iconChat{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -175px -27px;
+	display: inline-block;
+	height: 12px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	vertical-align: bottom;
+	width: 12px;
+}
+
+.eventSlide .img{
+	background: #f1f1f1;
+	line-height: 0.8;
+	position: relative;
+	min-height: 92px;
+}
+
+.eventSlide .date{
+   background: none repeat scroll 0 0 #EC1A29;
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    padding: 15px 20px;
+    position: absolute;
+    top: 0;
+}
+
+.eventSlide .date span{
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+}
+
+/* ///////////////////////////////////// */
+/*            NEWS PAGE TOP              */
+/* ///////////////////////////////////// */
+#newsPageTop{
+}
+
+.iconRSS{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat 0px 0px;
+	display: inline-block;
+	height: 13px;
+	margin: 0px 0px 0px 10px;
+	width: 13px;
+}
+
+#newsPageTop .lCol{
+	box-shadow: 1px 1px 1px #cacaca;
+	background: #fff;
+	float: left;
+	margin: 0px 0px 20px 0px;
+	padding: 20px 20px 20px 20px;
+	width: 700px;
+}
+
+#newsPageTop .rCol{
+	float: right;
+	width: 236px;
+}
+
+#newsPageTop .rCol section{
+	box-shadow: 1px 1px 1px #cacaca;
+	background: #f6f6f6;
+	border-top: 4px solid #9e9e9e;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 18px 20px 18px;
+}
+
+#newsPageTop .rCol section h2{
+	color: #313175;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+#newsPageTop .rCol section a{
+	color: #c42625;
+	font-weight: bold;
+}
+#newsPageTop .rCol section table{
+	margin: 0px 0px 20px 0px;
+}
+
+#newsPageTop .rCol section table td{
+	padding: 0px 20px 2px 0px;
+}
+
+#newsPageTop .rCol section .enlargeMap{
+	margin: 10px 0px 0px 0px;
+}
+
+#newsPageTop .lCol h1{
+	color: #313175;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+#newsPageTop .lCol .lSide {
+	border-right: 1px solid #dddddd;
+	float: left;
+	padding-right: 20px;
+	width: 390px;
+}
+
+#newsPageTop .lCol .rSide {
+	float: right;
+	width: 270px;
+}
+
+#newsPageTop .lCol .lSide .img{
+	min-height: 92px;
+	position: relative;
+}
+
+#newsPageTop .info{
+	color: #757575;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#newsPageTop .lCol .lSide .date{
+   background: none repeat scroll 0 0 #EC1A29;
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    padding: 15px 20px;
+    position: absolute;
+    top: 0;
+}
+
+#newsPageTop .lCol .lSide .date span{
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+}
+
+#newsPageTop .lCol h2{
+	color: #4d4db8;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.3;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.menuWrapper{
+	position: relative;
+}
+
+.menuWrapper ul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.menuWrapper li{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+}
+
+.menuWrapper li.active{
+	background: #e1e1e1;
+	color: #333333;
+}
+
+.menuWrapper li.active a{
+	color: #333333;
+}
+
+.menuWrapper li a{
+	color: #c42625;
+	display: inline-block;
+}
+/* ///////////////////////////////////// */
+/*               CAMPAIGN                */
+/* ///////////////////////////////////// */
+
+.campaignWrapper{
+	padding: 0px 0px 20px 0px;
+}
+
+.campaignSection{
+	box-shadow: 1px 4px 5px #888888;
+	height: 340px;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+	position: relative;
+	width: 995px;
+}
+
+.campaignNav{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 2;
+}
+
+.campaignNavWrapper{
+	margin: 0px auto;
+	position: relative;
+	width: 995px;
+}
+
+.campaignNav {
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.campaignNav li{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -112px -43px;
+	cursor: pointer;
+	float: left;
+	height: 12px;
+	margin: 0px 0px 0px 5px;
+	width: 12px;
+}
+
+.campaignNav li.active{
+	background-position: -127px -43px;
+}
+
+#campaign{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+}
+
+#campaign li{
+	background: #2d2d38;
+	float: left;
+	width: 995px;
+}
+
+#campaign .img{
+	float: left;
+	height: 340px;
+	width: 592px;
+}
+
+#campaign  .reversed .img{
+	float: right;
+	width: 403px;
+}
+
+#campaign .body{
+	color: #fff;
+	float: right;
+	padding: 70px 35px 0px 35px;
+	width: 330px;
+}
+
+#campaign .reversed .body{
+	float: left;
+	padding: 40px 35px 0px 35px;
+	width: 519px;
+}
+
+#campaign .body a{
+	color: #fff;
+}
+
+#campaign .body h1{
+	border: 0px none;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#campaign .body p{
+	font-size: 15px;
+	line-height: 1.3;
+	margin: 0px 0px 20px 0px;
+}
+
+#campaign .body p.more a{
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: #e9090c;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* ///////////////////////////////////// */
+/*           TEASERS SECTION             */
+/* ///////////////////////////////////// */
+
+
+.sponsorWideSection{
+	background: url(patternLogosWide.png)/*tpa=http://bccd.dk/images/bccd/patternLogosWide.png*/ repeat-x top left;
+	height: 200px;
+}
+
+.sponsorWideSection.sponsorSlide{
+	height: 170px;
+	margin-bottom: -60px;
+}
+
+.sponsorWideSection.sponsorSlide ul{
+	padding-bottom: 0px;
+	padding-top: 20px;
+}
+
+.sponsorWideSection .wrapper{
+	position: relative;
+}
+
+.sponsorWideSection ul{
+	left: 0px;
+	position: relative;
+	top: 0px;
+	width: 4000px;
+}
+
+.sponsorSection{
+	position: relative;
+	overflow: hidden;
+}
+
+.sponsorWideSection  h3{
+	color: #120654;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	left: 0px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 30px;
+}
+
+.sponsorWideSection ul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 30px 0px 30px 0px;
+}
+
+.sponsorWideSection ul li{
+	float: left;
+	line-height: 100px;
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+	width: 199px;
+}
+
+.sponsorWideSection ul li a{
+	vertical-align: middle;
+}
+
+.navLeft, .navRight{
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	position: absolute;
+	top: 84px;
+	width: 16px;
+}
+
+.navLeft{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -105px -1px;
+	left: -25px;
+}
+
+.navRight{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -128px -1px;
+	right: -25px;
+}
+
+
+
+/* ///////////////////////////////////// */
+/*             LEFT COLUMN               */
+/* ///////////////////////////////////// */
+
+
+#leftColumn{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	width: 235px;
+}
+
+#content{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+#content.twoCols{
+	background: url(pattern2ColsGrey.png)/*tpa=http://bccd.dk/images/bccd/pattern2ColsGrey.png*/ repeat-y right top #fff;
+	float: right;
+	padding: 0px 18px 20px 18px;
+	width: 704px;
+}
+
+#content.twoCols .nogrey{
+	background: #fff;
+	margin: 0px -18px -20px -18px;
+	padding: 0px 18px 20px 18px;
+}
+
+#content.twoCols.boardPage{
+	background: none;
+}
+
+
+#leftMenu{
+	background: #f6f6f6;
+	border-top: 4px solid #9e9e9e;
+	border-bottom: 2px solid #c0c0c0;
+	margin: 0px 0px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+#leftMenu h2{
+	color: #313175;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+#leftMenu ul{
+	border-top: 1px solid #dddddd;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#leftMenu ul li{
+	border-bottom: 1px solid #dddddd;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#leftMenu ul li a{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat right -587px;
+	color: #4d4db7;
+	display: block;
+	font-weight: bold;
+	line-height: 16px;
+	padding: 7px 0px 7px 0px;
+}
+
+#leftMenu ul li span{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat right -587px;
+	color: #4d4db7;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	line-height: 16px;
+	padding: 7px 0px 7px 0px;
+}
+
+
+#leftMenu ul li a, #leftMenu ul li span{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat right -587px;
+
+}
+
+#leftMenu ul li li a{
+	background: none;
+}
+
+#leftMenu ul li a.active, #leftMenu ul li a:hover{
+	background-position: right -646px;
+	color: #333333;
+}
+
+
+#leftMenu ul li span.open,  #leftMenu ul li span:hover{
+	background-position: right -646px;
+
+}
+
+
+/*
+#leftMenu ul li li span, #leftMenu ul li.open li span{
+	background-position: 175px -35px;
+}
+
+#leftMenu ul li li li span, #leftMenu ul li.open li li span{
+	background-position: 165px -35px;
+}
+
+#leftMenu ul li li li li span, #leftMenu ul li.open li li li span{
+	background-position: 155px -35px;
+}
+
+#leftMenu ul li.open a, #leftMenu ul li a:hover{
+	color: #333333;
+}
+
+#leftMenu ul li.open span, #leftMenu ul li span:hover{
+	background: url(../images/bccd/sprites01.png) no-repeat right -647px;
+	color: #333333;
+}
+*/
+
+#leftMenu ul li li a:hover{
+	color: #4d4db7;
+}
+
+#leftMenu ul ul{
+	display: none;
+	padding: 0px 0px 0px 0px;
+}
+
+#leftMenu ul ul ul{
+	display: none;
+	padding: 0px 0px 0px 15px;
+}
+
+#leftMenu ul li.open > ul{
+	display: block;
+}
+
+
+#leftMenu ul ul li{
+	border-bottom: 0px none;
+}
+
+#leftMenu ul ul li a{
+	color: #333333;
+	font-weight: normal;
+	padding: 4px 0px 4px 0px;
+}
+
+#leftMenu ul ul li a.active{
+	font-weight: bold;
+}
+
+#leftMenu ul ul li li{
+
+}
+
+.backTo{
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+}
+
+.backTo a{
+	color: #757575;
+	text-transform: uppercase;
+}
+
+.backTo img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -20px -2px;
+	display: inline-block;
+	height: 10px;
+	margin: 0px 5px 0px 0px;
+	width: 10px;
+}
+
+
+/* ///////////////////////////////////// */
+/*           ARTICLE NAV             */
+/* ///////////////////////////////////// */
+
+
+
+
+.articleNav{
+	background: #f6f6f6;
+	border-bottom: 1px solid #dddddd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px -18px 0px -18px;
+}
+
+.articleNav a{
+	float: left;
+	padding: 15px 18px 30px 18px;
+	width: 334px;
+}
+
+.articleNav a:hover{
+	background: #e5e5f0;
+	border-right: 1px solid #dddddd;
+	width: 333px;
+}
+
+.articleNav a.next{
+	float: right;
+	text-align: right;
+}
+
+.articleNav a.next:hover{
+	border-right: 0px none;
+	border-left: 1px solid #dddddd;
+}
+
+.articleNav a span{
+	color: #757575;
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.articleNav a span.nextName, .articleNav a span.nextName{
+	color: #4d4db8;
+	font-weight: normal;
+	padding: 5px 0px 0px 0px;
+	text-transform: none;
+}
+
+.articleNav a.next span.nextName{
+	padding-left: 100px;
+}
+
+.articleNav a.prev span.nextName{
+	padding-right: 100px;
+}
+
+.articleNav a.next img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -30px -2px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+
+.articleNav a.prev img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -20px -2px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+
+.newsTitle
+{
+    width:70%;
+}
+
+h1.shortTitle{
+	padding-right: 200px;
+}
+
+.donwloadTitleLink{
+	position: relative;
+}
+
+.downloadTitle{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	position: absolute;
+	right: 0px;
+	top: 40px;
+}
+
+.downloadTitle span{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -70px 1px;
+	display: inline-block;
+	height: 23px;
+	margin: 0px 0px 0px 5px;
+	position: relative;
+	text-indent: -9999px;
+	top: -2px;
+	vertical-align: middle;
+	width: 20px;
+
+}
+
+
+
+/* ///////////////////////////////////// */
+/*           TEASERS SECTION             */
+/* ///////////////////////////////////// */
+
+
+
+
+.teaser{
+	background: #fff;
+	border: 1px solid #dadada;
+	border-top: 0px none;
+	box-shadow: 1px 1px 1px #ddd;
+	border-bottom-color: #c3c3c3;
+	font-size: 12px;
+	font-size: 13px;
+	float: left;
+	margin: 0px 17px 20px 0px;
+	padding: 20px 20px 0px 20px;
+	width: 279px;
+}
+
+.teaser h3, .teaser h3 a{
+	color: #313175;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.teaser h3{
+	margin: 0px 0px 15px 0px;
+}
+
+.teaser img{
+	display: inline-block;
+	margin: 0px 0px 15px 0px;
+}
+
+.more a,.more{
+	color: #c42625;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.partners img{
+	box-shadow: 1px 1px 1px 1px #ddd;
+}
+
+.teaser.imageText .body{
+	float: right;
+	width: 170px;
+}
+
+.teaserRight{
+	margin: 0px 0px 40px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+
+.teaserRight h3, .teaserRight h3 a{
+	color: #313175;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.teaserRight h3{
+	margin: 0px 0px 15px 0px;
+}
+
+.teaserRight .img{
+	margin: 0px 0px 10px 0px;
+}
+
+.teaserRight .img img{
+	max-width: 195px;
+}
+
+
+
+.catSearch{
+	background: #dedede;
+	margin: 0px 0px 11px 0px;
+	padding: 15px 15px 15px 15px;
+}
+
+.selectMyStyle, .scfDropListGeneralPanel{
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #888888;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ repeat-x right -450px;
+
+	display: inline-block;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 203px;
+}
+
+.selectMyStyle select, .scfDropListGeneralPanel select{
+	background: none;
+	border: 0px none;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 0px 0px 5px;
+	text-transform: uppercase;
+	width: 230px;
+}
+
+
+.scfDateSelectorDateWrapper{
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #888888;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ repeat-x -35px -698px;
+
+	display: inline-block;
+	height: 30px;
+	height: 32px\0/;
+	margin: 10px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 100px;
+}
+
+.scfDateSelectorDateWrapper select{
+	background: none;
+	border: 0px none;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 0px 0px 5px;
+	padding-bottom: 4px \0/;
+	text-transform: uppercase;
+	width: 126px;
+}
+
+.scfDateSelectorDateDayWrapper{
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #888888;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ repeat-x -165px -698px;
+
+	display: inline-block;
+	height: 30px;
+	height: 32px\0/;
+	margin: 10px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 66px;
+}
+
+.scfDateSelectorDateDayWrapper select{
+	background: none;
+	border: 0px none;
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 0px 0px 5px;
+	padding-bottom: 4px \0/;
+	text-transform: uppercase;
+	width: 91px;
+}
+
+
+.selectMyStyle select option{
+	padding: 3px 10px 3px 10px;
+}
+
+.searchSection{
+	background: #fff;
+	display: inline-block;
+	float: right;
+	height: 20px;
+	padding: 5px 5px 5px 5px;
+	width: 194px;
+}
+
+.searchSection .txtInput{
+	border: 0px none;
+	display: inline-block;
+	height: 20px;
+	padding: 0px 10px 0px 10px;
+	width: 138px;
+}
+
+.searchSection .btnSearch{
+	background: #eb1827;
+	border: 0px none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 10px;
+	font-weight: bold;
+	height: 20px;
+	text-transform: uppercase;
+	width: 30px;
+}
+
+
+/* ///////////////////////////////////// */
+/*             EVENTS PAGE               */
+/* ///////////////////////////////////// */
+
+.eventHeader{
+	background: #fff;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 40px 25px 40px;
+}
+
+.eventHeader .leftCol{
+	float: left;
+	width: 440px;
+}
+
+.eventHeader .rightCol{
+	float: right;
+	width: 450px;
+}
+
+.eventHeader .date{
+	color: #9e9e9e;
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .body{
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader h1{
+	border-bottom: 0px none;
+	font-size: 28px;
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .info{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .info li{
+	line-height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.eventHeader .info li img{
+	display: inline-block;
+	height: 20px;
+	margin: 0px 15px 0px 0px;
+	vertical-align: top;
+	width: 20px;
+}
+
+.eventHeader .info li .iconLocation{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -193px 0px;
+}
+
+.eventHeader .info li .iconDate{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -216px 0px;
+}
+
+.eventHeader .info li .iconHour{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -241px -1px;
+}
+
+.eventHeader .eventsNav{
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 0px 0px 0px;
+}
+
+.eventHeader .eventsNav li{
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	text-transform: uppercase;
+	width: 40%;
+}
+
+.eventHeader .eventsNav li a{
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.eventHeader .eventsNav li.prev{
+	padding-right: 10%;
+	text-align: left;
+}
+
+.eventHeader .eventsNav li.next{
+	padding-left: 10%;
+	text-align: right;
+}
+
+.eventHeader .eventsNav li img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -20px -2px;
+	display: inline-block;
+	height: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 10px;
+}
+
+.eventHeader .eventsNav li.next img{
+	background-position: -31px -2px;
+}
+
+.btnSignUp, .btnSignUpEvent{
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+.btnSignUp a, .btnSignUpEvent a{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: #ec1a29;
+	color: #f1f1f1;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 20px 5px 20px;
+	text-transform: uppercase;
+}
+
+.listSearch{
+	background: #dedede;
+	padding: 15px 0px 15px 15px;
+	text-transform: uppercase;
+}
+
+.listSearch label{
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0px 20px 0px 0px;
+}
+
+.listSearch .selectMyStyle{
+	margin: 0px 20px 0px 0px;
+}
+
+.listSearch{
+	line-height: 30px;
+}
+
+
+
+.searchSectionWrapper{
+	background: #d0d0d0;
+	float: right;
+	margin: -15px 0px 0px -15px;
+	padding: 15px 75px 15px 15px;
+}
+
+.searchSectionWrapper .searchSection .btnSearch, .searchSectionWrapper .searchSection .txtInput{
+	float: left;
+}
+
+.searchSectionWrapper .searchSection{
+	width: 254px;
+}
+
+.searchSectionWrapper .searchSection .txtInput{
+	width: 198px;
+}
+
+
+/* ///////////////////////////////////// */
+/*              CONTENT TABS             */
+/* ///////////////////////////////////// */
+
+.contentTabs{
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.tabsNav{
+	background: #dedede;
+	color: #757575;
+	font-size: 12px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.tabsNav li{
+	border-right: 1px solid #cacaca;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	padding: 15px 20px 15px 20px;
+}
+
+.tabsNav li:hover, .tabsNav li.active{
+	background: #fff;
+	color: #313175;
+}
+
+.tabsContent{
+	font-family: 'loraregular', Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 40px 40px 40px;
+}
+
+.tabsContent li{
+	/*
+	display: none;
+	*/
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: -9999px;
+}
+
+.tabsContent li .tabLocation, .tabsContent li .tabLocation{
+	position: absolute;
+	left: -9999px;
+}
+
+.tabsContent li.active, .tabsContent li.hoverActive{
+	display: block;
+	position: static;
+}
+
+.tabsContent li.active .tabLocation, .tabsContent li.hoverActive .tabLocation{
+	display: block;
+	position: static;
+}
+
+
+.tabsContent.hover li.active{
+	display: none;
+}
+
+.tabsContent h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.tabsContent a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabLocation{
+	font-size: 15px;
+}
+
+.tabLocation .lCol{
+	float: left;
+	width: 240px;
+}
+
+.tabLocation .rCol{
+	float: right;
+	width: 540px;
+}
+
+
+.tabCols{
+	font-size: 15px;
+}
+
+.tabCols .lCol{
+	float: left;
+	width: 530px;
+}
+
+.tabCols .rCol{
+	float: right;
+	text-align: right;
+	width: 350px;
+}
+
+
+/* ///////////////////////////////////// */
+/*         NEWSLETTER PAGE TOP           */
+/* ///////////////////////////////////// */
+#newsletterPageTop{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#newsletterPageTop .lCol{
+	box-shadow: 1px 1px 1px #cacaca;
+	background: #fff;
+	border-top: 4px solid #fff;
+	float: left;
+	padding: 20px 20px 20px 20px;
+	width: 617px;
+}
+
+#newsletterPageTop .rCol{
+	box-shadow: 1px 1px 1px #cacaca;
+	background: #f6f6f6;
+	border-top: 4px solid #9e9e9e;
+	float: right;
+	padding: 20px 20px 20px 20px;
+	width: 280px;
+}
+
+#newsletterPageTop .newsletterPopup .lCol{
+	box-shadow: 0px 0px 0px #fff;
+	padding: 0px 0px 0px 0px;
+	width: 200px;
+}
+
+#newsletterPageTop .lCol h1{
+	color: #313175;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+#newsletterPageTop .lCol a{
+	font-weight: bold;
+}
+
+#newsletterPageTop .rCol .img{
+	float: left;
+	overflow: hidden;
+	width: 110px;
+}
+
+#newsletterPageTop .rCol h2{
+	color: #313175;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
+	text-transform: uppercase;
+}
+
+#newsletterPageTop .rCol .body{
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 150px;
+}
+
+#newsletterPageTop .rCol img{
+}
+
+#newsletterPageTop .rCol .link a{
+    background: none repeat scroll 0 0 #EC1A29;
+    border-radius: 5px 5px 5px 5px;
+    color: #F1F1F1;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////// */
+/*              LOPUP FORM               */
+/* ///////////////////////////////////// */
+
+
+.formPopup{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 3px 4px #333;
+
+	background: #fff;
+	border: 3px solid #9e9e9e;
+	color: #757575;
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	left: 50%;
+	margin: 0px 0px 0px -245px;
+	padding: 30px 35px 30px 35px;
+	position: fixed;
+	top: 100px;
+	z-index: 11;
+	width: 420px;
+}
+/*.loginPopup.formPopup
+{
+    display: block;
+}*/
+.formPopup .loginTitle{
+	color: #313175;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.formPopup .txtUsername, .formPopup .txtPassword, .formPopup .txtInput{
+	border: 1px solid #dddddd;
+	color: #757575;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 0px 20px 0px;
+	padding: 10px 10px 10px 10px;
+	width: 410px;
+}
+
+.formPopup .txtUsername.errorHighlight, .formPopup .txtPassword.errorHighlight{
+	border-color: #ec1a29;
+}
+
+.formPopup .txtUsername{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -305px 6px;
+	padding-left: 60px;
+	width: 360px;
+}
+
+.formPopup .txtPassword{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -301px -38px;
+	padding-left: 60px;
+	width: 360px;
+}
+
+.formPopup .lCol{
+	float: left;
+}
+
+.formPopup .lCol p{
+	margin: 10px 0px 0px 0px;
+}
+
+.formPopup .body{
+	color: #333333;
+	font-size: 14px;
+	padding: 0px 0px 10px 0px;
+}
+
+
+.formPopup.videoPopup {
+	display: block;
+	height: 315px;
+	margin-left: -280px;
+	padding: 0px 0px 0px 0px;
+	width: 560px;
+}
+
+.videoPopup .closePopup{
+	border: 1px solid #9E9E9E;
+	background: #333;
+	cursor: pointer;
+	color: #9E9E9E;
+	font-size: 16px;
+	font-weight: bold;
+	height: 25px;
+	line-height: 22px;
+	position: absolute;
+	right: -30px;
+	top: -30px;
+	text-align: center;
+	width: 25px;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* ///////////////////////////////////// */
+/*               LIST PAGE               */
+/* ///////////////////////////////////// */
+
+.listPage{
+	float: right;
+}
+
+.listLinks .head h2{
+	color: #313175;
+	float: left;
+	font-weight: bold;
+	font-size: 28px;
+	width: 50%;
+}
+
+.listPage strong{
+	color: #555555;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.listPage p{
+	float: left;
+}
+
+.listPage .selectMyStyle{
+	width: 60px;
+}
+
+.listPage .selectMyStyle select{
+	width: 80px;
+}
+
+.listPage ul{
+	float: right;
+	margin: 0px 0px 0px 30px;
+	padding: 0px 0px 0px 0px;
+}
+
+.listPage ul li{
+	color: #c42625;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 24px;
+	float: left;
+	list-style: none;
+	margin: 3px 10px 3px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.listPage ul li.prev{
+	border-right: 1px solid #dddddd;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.listPage ul li.next{
+	border-left: 1px solid #dddddd;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+.listPage ul li a{
+	color: #c42625
+}
+
+
+/* ///////////////////////////////////// */
+/*             SPONSORS PAGE             */
+/* ///////////////////////////////////// */
+#sponsors{
+	box-shadow: 1px 1px 1px #888888;
+	background: #fff;
+	margin: 0px 0px 40px 0px;
+	padding: 40px 40px 60px 40px;
+
+}
+
+#sponsors h1{
+	border-bottom: 0px none;
+	color: #313175;
+	font-size: 28px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 20px 0px;
+}
+
+#sponsors .sponsor {
+	border-bottom: 1px solid #dddddd;
+	padding: 20px 0px 40px 0px;
+}
+
+#sponsors .sponsor.last{
+	border-bottom: 0px none;
+}
+
+.sponsor .lCol{
+	float: left;
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+	width: 280px;
+}
+
+.sponsor .rCol{
+	float: right;
+	font-size: 15px;
+	padding: 0px 30px 0px 0px;
+	width: 570px;
+}
+
+.sponsor .rCol h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.sponsor .rCol .more a{
+	color: #757575;
+	font-size: 12px;
+}
+
+
+
+#sponsorDetails{
+	background: url(pattern2ColsGrey.png)/*tpa=http://bccd.dk/images/bccd/pattern2ColsGrey.png*/ repeat-y right top;
+	margin: 0px -18px -20px -18px;
+	padding: 0px 18px 20px 18px;
+
+}
+
+#sponsorDetails .lCol{
+	float: left;
+	width: 465px;
+}
+
+#sponsorDetails.sponsor2Cols .lCol{
+	background: #fff;
+}
+
+#sponsorDetails .rCol{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	padding: 35px 0px 0px 20px;
+	width: 195px;
+}
+
+#sponsorDetails h1{
+	border-bottom: 0px none;
+	color: #313175;
+	font-size: 28px;
+	margin: 45px 0px 25px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.sponsor2Cols #sponsorDetails h1{
+	padding-top: 0px;
+}
+
+#sponsorDetails .rCol h3{
+	font-weight: normal;
+	margin: 20px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sponsorDetails .rCol h4{
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.sponsorInfo{
+	font-size: 12px;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.sponsorInfo li{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+
+/* ///////////////////////////////////// */
+/*              BOARD MEMBERS            */
+/* ///////////////////////////////////// */
+
+
+.boardChairman{
+	background: #fff;
+	margin: 30px 0px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+.boardChairman h2, .boardMembersSection h2{
+	border-bottom: 1px solid #dddddd;
+	color: #313175;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.boardMembersSection h2{
+	margin: 0px 0px 0px 0px;
+}
+
+.boardChairman .chairman{
+	float: left;
+	padding: 0px 20px 20px 0px;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	width: 310px;
+}
+
+.boardChairman .chairman.wide, .boardChairman .chairman.right.wide{
+	width: 664px;
+}
+
+.boardChairman .chairman.wide img, .boardChairman .chairman.right.wide img{
+	float: right;
+	margin: 0px 0px 20px 20px;
+}
+
+.boardChairman .chairman.right{
+	border-left: 1px solid #dddddd;
+	float: right;
+	padding-left: 20px;
+	padding-right: 0px;
+	width: 309px;
+}
+
+.boardChairman h3, .boardMembersSection h3, #membersPopup h3{
+	color: #4d4db8;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 6px 0px;
+}
+
+#membersPopup h3{
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.boardChairman h4, .boardMembersSection h4, #membersPopup h4{
+	color: #757575;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 6px 0px;
+}
+
+.boardChairman img{
+	cursor: pointer;
+}
+
+#membersPopup h4{
+	font-size: 20px;
+	margin: 0px 0px 20px 0px;
+}
+
+.boardMembersSection{
+	background: #f6f6f6;
+}
+
+.boardMembersSection h4{
+	font-size: 13px;
+}
+
+.boardChairman .chairman .more{
+	bottom: 0px;
+	margin: 0px 0px 0px 0px;
+	position: absolute;
+}
+
+.boardMembersSection{
+	background: #fff;
+	padding: 20px 20px 20px 20px;
+}
+.scholarList .boardMembersSection{
+	padding: 20px 0;
+}
+.boardMembers{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.boardMembers .memberPopupBody, .boardChairman .memberPopupBody{
+	display: none;
+}
+
+.boardMembers .lCol{
+	float: left;
+	line-height: 1;
+	width: 130px;
+}
+
+.boardMembers .rCol{
+	float: right;
+	width: 515px;
+}
+
+.boardMembers .lCol img{
+	cursor: pointer;
+	line-height: 1;
+}
+
+.boardMembers li{
+	border-bottom: 1px solid #dddddd;
+	padding: 20px 0px 20px 0px;
+}
+
+.boardMembers li.last{
+	border-bottom: 0px none;
+	padding: 20px 0px 0px 0px;
+}
+
+.boardMembersSection .mail {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#membersPopup{
+	display: none;
+}
+
+#membersPopup{
+	box-shadow: 4px 8px 8px #999;
+	background: #fff;
+	left: 50%;
+	margin: 0px 0px 0px -330px;
+	position: fixed;
+	top: 50px;
+	width: 650px;
+	z-index: 5;
+}
+
+#membersNav{
+	border-bottom: 1px solid #dddddd;
+	margin: 0px 0px 20px 0px;
+}
+
+#membersNav strong{
+	background: #f6f6f6;
+    color: #757575;
+	cursor: pointer;
+	height: 37px;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+	padding: 20px 20px 20px 20px;
+	width: 285px;
+}
+
+#membersNav strong:hover{
+	background: #E5E5F0;
+}
+
+#membersNav em{
+	color: #4d4db8;
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	padding: 3px 0px 0px 0px;
+	text-transform: none;
+}
+
+#membersNav strong.prev img{
+	margin-right: 3px;
+}
+
+#membersNav strong.next{
+	border-left: 1px solid #dddddd;
+    display: block;
+	float: right;
+	text-align: right;
+	width: 284px;
+}
+
+#membersNav strong{
+    text-transform: uppercase;
+}
+
+
+#membersNav strong.next img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -30px -2px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+
+#membersNav strong.prev img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -20px -2px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+
+#membersPopup .membersBody{
+	padding: 20px 20px 20px 20px;
+}
+
+#membersPopup .lCol{
+	float: left;
+	width: 360px;
+}
+
+#membersPopup .rCol{
+	float: right;
+	width: 220px;
+}
+
+#membersPopup h3{
+
+}
+
+.sponsorMail{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+.sponsorMail img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -198px -54px;
+	display: inline-block;
+	height: 16px;
+	margin: 0px 5px 0px 0px;
+	vertical-align: middle;
+	width: 25px;
+}
+
+.sponsorMail a{
+	line-height: 16px;
+}
+
+.sponsor2Cols #sponsorDetails .contentHeader{
+	border-bottom: 1px solid #dddddd;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.sponsor2Cols #sponsorDetails .contentHeader h1{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.sponsor2Cols #sponsorDetails .contentHeader h2{
+	color: #2b2b2b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.jumpToTop{
+	color: #;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 50px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.jumpToTop a{
+	color: #757575;
+}
+
+.jumpToTop img{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -55px -2px;
+	display: inline-block;
+	height: 12px;
+	line-height: 16px;
+	position: relative;
+	top: -1px;
+	vertical-align: middle;
+	width: 12px;
+}
+
+.leftSideSection h3{
+	color: #313175;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.leftSideSection{
+	background: #fff;
+	border-top: 4px solid #9e9e9e;
+	margin: 0px 0px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+.leftSideSection ul{
+	list-style: none;
+	margin: 20px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.leftSideSection ul li{
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+}
+
+.leftSideSection p{
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/* ///////////////////////////////////// */
+/*            COMUNITY TOOLS             */
+/* ///////////////////////////////////// */
+
+.commentsArea{
+	clear: both;
+	float: left;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 18px 20px 0px;
+	width: 465px;
+}
+
+.comunityTools{
+
+}
+
+.comunityTools ul{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #dddddd;
+	border-right: 0px none;
+	background: #f1f1f1;
+	color: #333333;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.comunityTools ul li{
+	border-right: 1px solid #dddddd;
+	height: 20px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 15px 10px 15px;
+	position: relative;
+}
+
+.comunityTools ul li:hover{
+	background: #fff;
+	height: 21px;
+	margin-bottom: -1px;
+}
+
+.comunityTools ul li.lastItem {
+	border-right: 0px none;
+	margin-right: 0px;
+	position: relative;
+	right: 0px;
+	top: 0px;
+	padding-right: 0px;
+}
+
+.comunityTools ul li.lastItem strong{
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat 0px -360px;
+	color: #fff;
+	display: inline-block;
+	float: right;
+	line-height: 20px;
+	margin: -10px 0px -10px 10px;
+	padding: 10px 20px 10px 20px;
+}
+
+.comunityTools ul li:hover ul{
+	display: block;
+}
+
+.comunityTools ul li a{
+	color: #333333;
+	line-height: 20px;
+	vertical-align: top;
+}
+
+.comunityTools ul li.firstItem{
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.comunityTools ul li input{
+	margin: 0px 5px 0px 0px;
+}
+
+.comunityTools ul li ul{
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+
+	background: #fff;
+	border: 1px solid #dddddd;
+	border-top: 0px none;
+	display: none;
+	left: -1px;
+	padding: 0px 0px 10px 0px;
+	position: absolute;
+	top: 41px;
+	z-index: 3;
+}
+
+.comunityTools li ul li, .comunityTools li:hover ul li{
+	border: 0px none;
+	float: none;
+	padding: 5px 0px 5px 0px;
+}
+
+.comunityTools li.noHand ul li a{
+	padding-left: 15px;
+}
+
+.comunityTools li ul li a{
+	background-repeat: no-repeat;
+	background-position: 10px 3px;
+	display: block;
+	line-height: 20px;
+	padding: 5px 20px 0px 40px;
+	white-space: nowrap;
+}
+
+.comunityTools li ul li a:hover{
+	color: #4d4db8;
+}
+
+
+.commentsDisplayArea{
+	width: 600px;
+}
+
+.commentsDisplayArea label{
+	color: #333333;
+	clear: both;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	height: 28px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
+	width: 200px;
+}
+
+.commentsDisplayArea input{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -266px;
+	border: 0px none;
+	display: inline-block;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	width: 288px;
+}
+
+.commentsDisplayArea input:focus{
+	background-position: -3px -305px;
+}
+
+.commentsDisplayArea textarea, .scfMultipleLineTextBox{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -166px;
+	border: 0px none;
+	display: inline-block;
+	float: left;
+	height: 80px;
+	line-height: 18px;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+	width: 288px;
+}
+
+
+.scfListBox{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -166px;
+	border: 0px none;
+	display: inline-block;
+	float: left;
+	height: 100px;
+	line-height: 20px;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+	width: 303px;
+}
+
+.scfListBox option{
+	line-height: 20px;
+	margin: 0px 0px 2px 0px;
+}
+
+.commentsDisplayArea .captcha{
+	clear: both;
+	margin: 0px 0px 0px 200px;
+	float: left;
+}
+
+.commentsDisplayArea .btnSubmit{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -450px;
+	border: 1px solid #d9d9d9;
+	cursor: pointer;
+	font-size: 14px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px 0px 0px 200px;
+	padding: 5px 30px 5px 30px;
+	width: auto;
+}
+
+.commentsDisplayArea .btnSubmit{
+	background: #c42625;
+	color: #fff;
+}
+
+.scfValidationSummary ul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.scfValidationSummary ul li{
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.scfValidator{
+	clear: both;
+	display: block;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 205px;
+	position: relative;
+	top: -5px;
+}
+
+
+/* ///////////////////////////////////// */
+/*               FOOTER MENU             */
+/* ///////////////////////////////////// */
+
+#paymentPage{
+	background: #fff;
+	margin: 0px 0px 40px 0px;
+	padding: 40px 40px 40px 40px;
+}
+
+#paymentPage .breadcrumbs {
+	background: url(spritePayment.png)/*tpa=http://bccd.dk/images/bccd/spritePayment.png*/ no-repeat 0px 40px;
+	padding-bottom: 50px;
+}
+
+#paymentPage .breadcrumbs.step2{
+	background-position: 0px -96px;
+}
+
+#paymentPage .breadcrumbs.step3{
+	background-position: 0px -239px;
+}
+
+
+#paymentPage .breadcrumbs ul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#paymentPage .breadcrumbs ul li{
+	color: #dcdcdc;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 33%;
+}
+
+#paymentPage .breadcrumbs ul li.active{
+	color: #757575;
+}
+
+#paymentPage .pannel{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #e4e4e4;
+	background: #f0f0f0;
+	color: #757575;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px 20px 15px 20px;
+}
+
+#paymentPage .pannel h2{
+	color: #313175;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+}
+
+#paymentPage .pannel p{
+	margin: 0px 0px 0px 0px;
+}
+
+#paymentPage .pannel .lCol{
+	float: left;
+	width: 610px;
+}
+
+#paymentPage .pannel .rCol{
+	float: right;
+	text-align: right;
+	width: 250px;
+}
+
+#paymentPage .pannel .lCol input{
+	border: 1px solid #e4e4e4;
+	margin: 0px 10px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	width: 260px;
+}
+
+/*#paymentPage .pannel .rCol */.btnSubmit, .scfSubmitButtonBorder input{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #c41521;
+	background: #ed1c2c;
+	border: 0px none;
+	color: #f1f1f1;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 20px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+}
+
+#paymentPage .pannel .rCol a{
+	font-weight: bold;
+}
+
+
+.formSection input, .scfSingleLineTextBox, .scfEmailTextBox{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -266px;
+	border: 0px none;
+	display: inline-block;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	margin: 5px 0px 0px 0px;
+	padding: 5px 10px 5px 10px;
+	width: 288px;
+}
+
+.formSection input:focus, .scfSingleLineTextBox:focus, .scfEmailTextBox:focus{
+	background-position: -3px -305px;
+}
+
+.formSection input.errorHighlight, .scfSingleLineTextBox.errorHighlight, .scfEmailTextBox.errorHighlight{
+	background-position: -3px -532px;
+}
+
+.formSection .selectMyStyle{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -496px;
+	box-shadow: 0px 0px 0px #888888;
+	border-radius: 0px 0px 0px 0px;
+	height: 33px;
+	float: left;
+	width: 303px;
+}
+
+.formSection .selectMyStyle select{
+	height: 33px;
+	padding-left: 15px;
+	padding-top: 8px;
+	width: 325px;
+}
+
+
+.scfDropListGeneralPanel{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -3px -496px;
+	box-shadow: 0px 0px 0px #888888;
+	border-radius: 0px 0px 0px 0px;
+	height: 33px;
+	float: left;
+	margin-right: 5px;
+	width: 303px;
+}
+
+.scfDropListGeneralPanel select{
+	height: 33px;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 6px \0/;
+	width: 320px;
+}
+
+
+.formSection{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 0px 40px 0px;
+	width: 470px;
+}
+
+.scfSectionBorderAsFieldSet{
+	clear: both;
+	padding: 15px 0px 0px 0px;
+}
+
+.scfSectionLegend{
+	border-top: 1px solid #ddd;
+	display: block;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 15px 0px 0px 0px;
+	width: 100%;
+}
+
+.scfLabel{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 10px 0px;
+}
+
+.formSection label, .scfSingleLineTextLabel, .scfEmailLabel, .scfListBoxLabel, .scfMultipleLineTextLabel, .scfEmailLabel, .scfDropListLabel, .scfDropListLabel, .scfDateSelectorLabel{
+	color: #333333;
+	clear: both;
+	float: left;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	width: 150px;
+}
+
+.scfDateSelectorGeneralPanel label{
+	color: #333333;
+	float: left;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 0px 0px 0px;
+	padding: 10px 10px 10px 0px;
+	width: auto;
+}
+
+.scfSingleLineTextLabel, .scfEmailLabel, .scfListBoxLabel, .scfMultipleLineTextLabel, .scfMultipleLineTextLabel, .scfEmailLabel, .scfDropListLabel, .scfDropListLabel, .scfDateSelectorLabel{
+	width: 200px;
+}
+
+.scfDateSelectorGeneralPanel label{
+	display: none;
+}
+
+.formSection label span{
+	color: #ec1a29;
+}
+
+.formSection h2{
+	color: #313175;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0px 0px 30px 0px;
+	padding: 0px 0px 0px 0px
+}
+
+.formInfo{
+	color: #a6abad;
+	font-size: 12px;
+	float: left;
+	margin: -10px 0px 10px 150px;
+	padding: 0px 0px 0px 5px;
+	width: 300px;
+}
+
+.formFooterSubmit, .scfSubmitButtonBorder{
+	border-top: 1px solid #dddddd;
+	color: #5c5f63;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 20px 0px 0px 0px;
+	text-align: right;
+	width: 505px;
+}
+
+.updateExtranetUser .formFooterSubmit{
+	width: 455px;
+}
+
+.scfSubmitButtonBorder{
+	padding-right: 199px;
+}
+
+.formFooterSubmit.left{
+	text-align: left;
+}
+
+.formFooterSubmit a{
+	font-weight: bold;
+}
+
+.formFooterSubmit p input{
+	vertical-align: middle;
+}
+
+.errorSection{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -280px -75px #fde8e9;
+	border: 1px solid #fcdddf;
+	line-height: 20px;
+	margin: 30px 0px 0px 0px;
+	padding: 25px 20px 25px 80px;
+}
+
+.errorSection p{
+	color: #8e6265;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+/* ///////////////////////////////////// */
+/*                SITEMAP                */
+/* ///////////////////////////////////// */
+
+#sitemap{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sitemap ul{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.4;
+	list-style: none;
+	margin: 0px 0px 0px 200px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sitemap ul li{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sitemap ul a{
+	border-left: 1px solid #cacaca;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+
+#sitemapTable{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.3;
+	width: 100%;
+}
+
+#sitemapTable td{
+	/*
+	background: url(../images/bccd/smVertical.png) repeat-y -4px 0px;
+	*/
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sitemapTable td a{
+	display: inline-block;
+	padding: 2px 0px 2px 0px;
+}
+
+#sitemapTable img{
+	background: #fff;
+}
+
+
+.listSimpleLinks{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.listSimpleLinks li{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.listSimpleLinks h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.listSimpleLinks h3{
+	font-size: 13px;
+}
+
+.listSimpleLinks p a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ///////////////////////////////////// */
+/*               FOOTER MENU             */
+/* ///////////////////////////////////// */
+
+footer{
+	background: #2d2d38;
+	color: #c0c0c4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 60px 0px 0px 0px;
+	padding: 0px 0px 30px 0px;
+}
+
+footer h3{
+	color: #c0c0c4;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+footer a{
+	color: #c0c0c4;
+}
+
+#footerMenu{
+	border-bottom: 1px solid #575760;
+	font-size: 12px;
+	list-style: none;
+	padding: 50px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#footerMenu.hidden{
+	display: none;
+}
+
+#footerMenu li{
+	float: left;
+	padding: 0px 30px 0px 0px;
+	width: 160px;
+}
+
+#footerMenu li.last{
+	float: right;
+	padding: 0px 0px 0px 0px;
+	width: 230px;
+}
+
+#footerMenu li.last p{
+	line-height: 1.5;
+}
+
+#footerMenu li ul{
+	list-style: none;
+	margin: 0px 0px 25px 0px;
+}
+
+#footerMenu li ul li{
+	float: none;
+	line-height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+	width: auto;
+}
+
+#footerBottom{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+#footerBottom p{
+	float: right;
+	margin: 50px 0px 0px 0px;
+}
+
+#footerBottom p a{
+	display: inline-block;
+	padding: 0px 5px 0px 5px;
+}
+
+#footerBottom p span{
+	display: inline-block;
+	margin: 0px 0px 0px 50px;
+}
+
+footer .wrapper {
+	position: relative;
+}
+
+footer .wrapper .btnFooterSlider{
+	background: url(sprites01.png)/*tpa=http://bccd.dk/images/bccd/sprites01.png*/ no-repeat -145px -3px #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 30px;
+
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+footer .wrapper .btnFooterSlider.closed{
+	background-position: -145px -28px;
+
+}
+
+
+/* */
+
+.subscribeExtranet{
+	display: none;
+	margin: 0px 230px 20px 0px;
+}
+
+.subscribeExtranet .formSection{
+	padding-bottom: 20px;
+}
+
+.subscribeExtranet label{
+	display: block;
+}
+
+.subscribeExtranet input{
+}
+
+.formSection .selectMyStyle.countrySelect{
+	margin-top: 8px;
+	margin-top: 5px;
+}
+
+.formSection .selectMyStyle.countrySelect select{
+	font-weight: normal;
+	padding-bottom: 7px;
+	padding-left: 9px;
+	text-transform: none;
+}
+
+.subscribeExtranet  .formFooterSubmit{
+	margin-right: 170px;
+	width: auto;
+}
+
+span.btnSubscribeExtranet, .updateDataLink{
+	color: #4D4DB8;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.btnSubscribeExtranetDisplay{
+	color: #4D4DB8;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.passwordMatchError{
+	clear: both;
+	display: none;
+}
+
+.updateExtranetUser{
+	display: none;
+}
+
+.paginationSimple{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px 0px 30px 0px;
+	padding: 20px 0px 0px 0px;
+	text-align: right;
+}
+
+.paginationSimple a{
+	color: #C42625;
+	font-weight: bold;
+	margin: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+.memberList{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	width: 100%;
+}
+
+#content .memberList th{
+	background: #CACACA;
+	border-right: 0px;
+	border-left: 0px;
+	padding: 5px 20px 5px 20px;
+}
+
+#content .memberList td{
+	border-right: 0px;
+	border-left: 0px;
+	padding: 5px 20px 5px 20px;
+}
+
+
+#content .memberList th.first, #content .memberList td.first{
+	padding-left: 10px;
+}
+
+.memberListSection{
+	margin: 0px 0px 0px 0px;
+	width: 465px;
+}
+
+
+
+
+
+
+#topHighlightSection .btnSignUp, .btnLoginSubmit, .btnSignOut, .btnSubmit, .scfSubmitButtonBorder input{
+/*
+	behavior: url(/js/bccd/border-radius.htc);
+
+	position: relative;
+	z-index: 1;
+	*/
+}
+
+
+
+
+
+.wrapper:after, .scfDateSelectorBorder:after, #topMenu:after, #footerMenu:after, #footerBottom:after, .threeCols:after, .twoCols:after, .sponsorWideSection ul:after, #campaign li:after, #mainMenu ul .subMenu:after, .menuInfo .bookNow:after, .articleNav:after, .eventHeader:after, .eventHeader .eventsNav:after, .tabsNav:after, .tabsContent:after, .tabLocation:after, #sponsors .sponsor:after, #sponsorDetails:after, .listPage:after, .head:after, .listSearch:after, .searchSectionWrapper:after, #newsletterPageTop:after, #newsPageTop:after, .eventSlide:after, .boardChairman:after, .boardMembersSection:after, .boardMembers li:after, .memberPopupBody:after, #membersPopup .membersBody:after, #membersNav:after, .commentsArea:after, .comunityTools ul:after, .comunityTools:after, .addAComment fieldset:after, .formPopup fieldset:after, .breadcrumbs ul:after, #breadcrumbs .fieldset:after, .formSection:after, #campaign:after, .nogrey:after, .scfSingleLineTextBorder:after, .scfEmailBorder:after, .scfListBoxBorder:after, .scfMultipleLineTextBorder:after, .scfDropListBorder:after, .scfDateSelectorGeneralPanel:after{
+	content: '.';
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	display: block;
+}
+
+.wrapper, #topMenu, #footerMenu, #footerBottom, .threeCols, .twoCols, .sponsorWideSection ul, #campaign li, #mainMenu ul .subMenu, .menuInfo .bookNow, .articleNav, .eventHeader, .eventHeader .eventsNav, .tabsNav, .tabsContent, .tabLocation, #sponsors .sponsor, #sponsorDetails, .listPage, .head, .listSearch, .searchSectionWrapper, #newsletterPageTop, #newsPageTop, .eventSlide, .boardChairman, .boardMembersSection, .boardMembers li, .memberPopupBody, #membersPopup .membersBody, #membersNav, .commentsArea, .comunityTools ul, .comunityTools, .addAComment fieldset, .formPopup fieldset, .breadcrumbs ul, #breadcrumbs .fieldset, .formSection, #campaign, .nogrey, .scfSingleLineTextBorder, .scfEmailBorder, .scfListBoxBorder, .scfMultipleLineTextBorder{
+	zoom: 1;
+}
+
+
+
+/* IE7 */
+
+#mainMenu li.first a img{
+	*position: relative;
+	*top: 16px;
+}
+
+#mainMenu li.first a {
+	*height: 50px;
+}
+
+.selectMyStyle select{
+	*display:block;
+	*height: 30px;
+	*width: 203px;
+}
