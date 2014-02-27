@@ -90,8 +90,9 @@ input,textarea {
 }
 
 #content {
-	float: left;
-	width: 640px;
+	float: right;
+	clear: left;
+	width: 742px;
 }
 
 .fullwidth {
@@ -99,10 +100,11 @@ input,textarea {
 }
 /*============================ SIDEBAR ============================*/
 #sidebar {
-	width: 340px;
-	margin-left: 660px;
+	float: left;
+	width: 235px;
 }
 
+}
 .sidebar-two {
 	float: right;
 }
@@ -348,7 +350,8 @@ input,textarea {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	width: 100%;
-	line-height: 2.6; border-bottom : 1px solid #ccc;
+	line-height: 2.6;
+	border-bottom: 1px solid #ccc;
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 }
@@ -375,7 +378,8 @@ input,textarea {
 
 #nav a {
 	display: block;
-	padding: 9px 24px; color : #fff;
+	padding: 9px 24px;
+	color: #fff;
 	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
@@ -1353,4 +1357,115 @@ blockquote:after {
 
 .credit_link a {
 	color: #fff !important;
+}
+
+.eventHeader {
+	background: #fff;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 40px 25px 40px;
+}
+
+.eventHeader .leftCol {
+	float: left;
+	width: 440px;
+}
+
+.eventHeader .rightCol {
+	float: right;
+	width: 450px;
+}
+
+.eventHeader .date {
+	color: #9e9e9e;
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader h1 {
+	border-bottom: 0px none;
+	font-size: 28px;
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .body {
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .info {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.eventHeader .info li {
+	line-height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.eventHeader .info li .iconLocation {
+	background: url(images/sprites01.png) no-repeat -193px 0px;
+}
+
+.eventHeader .info li img {
+	display: inline-block;
+	height: 20px;
+	margin: 0px 15px 0px 0px;
+	vertical-align: top;
+	width: 20px;
+}
+
+.eventHeader .eventsNav {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 40px 0px 0px 0px;
+}
+
+.eventHeader .eventsNav li.prev {
+	padding-right: 10%;
+	text-align: left;
+}
+
+.eventHeader .eventsNav li.next {
+	padding-left: 10%;
+	text-align: right;
+}
+
+.eventHeader .eventsNav li {
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	text-transform: uppercase;
+	width: 40%;
+}
+
+.eventHeader .eventsNav li a {
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.eventHeader .eventsNav li img {
+	background: url(images/sprites01.png) no-repeat -20px -2px;
+	display: inline-block;
+	height: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 10px;
+}
+
+img {
+	border: 0px none;
 }
