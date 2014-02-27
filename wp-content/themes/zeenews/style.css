@@ -1,18 +1,17 @@
 /*======================================
-Theme Name: zeeNews
-Theme URI: http://themezee.com/zeenews
-Description: zeeNews is a perfect WordPress theme for any News, Magazine or Blog Website. The Theme comes with extensive Theme Options which allows you to customize Colors, Logo, Featured Posts Slider and Ad Banners. Moreover zeeNews comes with an custom menus based multiple dropdown navigation, several sidebar areas, custom widgets and custom page templates. Enjoy :)
-Version: 1.3.4
-Author: ThemeZee
-Author URI: http://themezee.com
-Tags: custom-background, custom-colors, custom-header, custom-menu, theme-options, threaded-comments, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light, editor-style, full-width-template, translation-ready, sticky-post, fixed-width, two-columns, one-column, right-sidebar, left-sidebar
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-======================================*/
+ Theme Name: zeeNews
+ Theme URI: http://themezee.com/zeenews
+ Description: zeeNews is a perfect WordPress theme for any News, Magazine or Blog Website. The Theme comes with extensive Theme Options which allows you to customize Colors, Logo, Featured Posts Slider and Ad Banners. Moreover zeeNews comes with an custom menus based multiple dropdown navigation, several sidebar areas, custom widgets and custom page templates. Enjoy :)
+ Version: 1.3.4
+ Author: ThemeZee
+ Author URI: http://themezee.com
+ Tags: custom-background, custom-colors, custom-header, custom-menu, theme-options, threaded-comments, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light, editor-style, full-width-template, translation-ready, sticky-post, fixed-width, two-columns, one-column, right-sidebar, left-sidebar
+ License: GNU General Public License v2.0
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ ======================================*/
 
 /*============================ RESET ============================*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
-	{
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -35,7 +34,7 @@ body {
 	color: #222;
 }
 
-ul,ol {
+ul, ol {
 	list-style: none;
 }
 
@@ -47,16 +46,16 @@ img {
 	clear: both;
 }
 
-a,a:link,a:visited {
+a, a:link, a:visited {
 	color: #bd0039;
 	text-decoration: underline;
 }
 
-a:hover,a:active {
+a:hover, a:active {
 	text-decoration: none;
 }
 
-input,textarea {
+input, textarea {
 	background-color: #fff;
 	margin: 5px;
 	border-top: 2px solid #ddd;
@@ -93,6 +92,11 @@ input,textarea {
 	float: right;
 	clear: left;
 	width: 742px;
+}
+
+#content-event {
+	float: left;
+	width: 1000px;
 }
 
 .fullwidth {
@@ -138,7 +142,7 @@ input,textarea {
 	border: 1px solid #ccc;
 }
 
-#sidebar ul li ul,#sidebar ul li div {
+#sidebar ul li ul, #sidebar ul li div {
 	margin-bottom: 5px;
 	padding: 5px;
 	color: #000;
@@ -148,7 +152,7 @@ input,textarea {
 	padding: 10px;
 }
 
-#sidebar ul li div ul,#sidebar ul li div ul li {
+#sidebar ul li div ul, #sidebar ul li div ul li {
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -159,17 +163,17 @@ input,textarea {
 	color: #444;
 }
 
-#sidebar a,#sidebar ul {
+#sidebar a, #sidebar ul {
 	font-size: 1.0em;
 	line-height: 1.2em;
 }
 
-#sidebar a:link,#sidebar a:visited {
+#sidebar a:link, #sidebar a:visited {
 	color: #bd0039;
 	text-decoration: underline;
 }
 
-#sidebar a:hover,#sidebar a:active {
+#sidebar a:hover, #sidebar a:active {
 	text-decoration: none;
 }
 
@@ -229,11 +233,11 @@ input,textarea {
 	background: #eee;
 }
 
-.sidebar-left #s,.sidebar-right #s {
+.sidebar-left #s, .sidebar-right #s {
 	width: 115px;
 }
 
-.sidebar-left #searchsubmit,.sidebar-right #searchsubmit {
+.sidebar-left #searchsubmit, .sidebar-right #searchsubmit {
 	width: 90px;
 }
 /*============================ HEADER ============================*/
@@ -281,7 +285,7 @@ input,textarea {
 	width: 1000px;
 }
 
-#topnav,#topnav ul {
+#topnav, #topnav ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -334,13 +338,11 @@ input,textarea {
 	margin-left: 12em;
 }
 
-#topnav li:hover ul ul,#topnav li:hover ul ul ul,#topnav li:hover ul ul ul ul
-	{
+#topnav li:hover ul ul, #topnav li:hover ul ul ul, #topnav li:hover ul ul ul ul {
 	display: none;
 }
 
-#topnav li:hover ul,#topnav li li:hover ul,#topnav li li li:hover ul,#topnav li li li li:hover ul
-	{
+#topnav li:hover ul, #topnav li li:hover ul, #topnav li li li:hover ul, #topnav li li li li:hover ul {
 	display: block;
 }
 /*============================ NAVIGATION ============================*/
@@ -361,7 +363,7 @@ input,textarea {
 	width: 1000px;
 }
 
-#nav,#nav ul {
+#nav, #nav ul {
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -399,7 +401,14 @@ input,textarea {
 	text-transform: uppercase;
 }
 
-#nav a:hover {
+#nav li.first:hover a {
+	border-top: 0px none;
+	background: none;
+	border-bottom: 0px none;
+	line-height: inherit;
+	z-index: 0px;
+}
+#nav li a:hover {
 	background: #fff;
 	border-top: 3px solid #ec1a29;
 	border-bottom: 3px solid #fff;
@@ -437,12 +446,11 @@ input,textarea {
 	margin-left: 11em;
 }
 
-#nav li:hover ul ul,#nav li:hover ul ul ul,#nav li:hover ul ul ul ul {
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul {
 	display: none;
 }
 
-#nav li:hover ul,#nav li li:hover ul,#nav li li li:hover ul,#nav li li li li:hover ul
-	{
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul {
 	display: block;
 }
 /*============================ More_Posts, Calendar ============================*/
@@ -482,7 +490,7 @@ input,textarea {
 	background: #eee;
 }
 /*============================ POST ============================*/
-.post,.type-page,.type-attachment {
+.post, .type-page, .type-attachment {
 	margin: 0 0 20px 0;
 	background: #fff;
 	border: 1px solid #ccc;
@@ -509,12 +517,12 @@ input,textarea {
 	font-family: 'Francois One', Arial, Verdana, Helvetica;
 }
 
-.post-title a:link,.post-title  a:visited {
+.post-title a:link, .post-title  a:visited {
 	color: #bd0039;
 	text-decoration: none;
 }
 
-.post-title  a:hover,.post-title  a:active {
+.post-title  a:hover, .post-title  a:active {
 	text-decoration: underline;
 }
 
@@ -523,39 +531,39 @@ input,textarea {
 	line-height: 1.5em;
 }
 
-.entry h1,.comment h1 {
+.entry h1, .comment h1 {
 	font-size: 1.9em;
 	margin: 30px 0 0 0;
 	color: #222;
 }
 
-.entry h2,.comment h2 {
+.entry h2, .comment h2 {
 	font-size: 1.7em;
 	margin: 25px 0 0 0;
 	padding: 0;
 	color: #222;
 }
 
-.entry h3,.comment h3 {
+.entry h3, .comment h3 {
 	font-size: 1.5em;
 	margin: 20px 0 0 0;
 	color: #222;
 }
 
-.entry h4,.comment h4 {
+.entry h4, .comment h4 {
 	font-size: 1.3em;
 	margin: 15px 0 0 0;
 	color: #222;
 }
 
-.entry h5,.comment h5 {
+.entry h5, .comment h5 {
 	font-size: 1.2em;
 	margin: 10px 0 0 0;
 	color: #222;
 	font-weight: bold;
 }
 
-.entry h6,.comment h6 {
+.entry h6, .comment h6 {
 	font-size: 1.0em;
 	margin: 5px 0 0 0;
 	color: #222;
@@ -626,7 +634,7 @@ input,textarea {
 	line-height: 2em;
 }
 
-.meta-tags a:link,.meta-tags a:visited {
+.meta-tags a:link, .meta-tags a:visited {
 	color: #222;
 	display: block;
 	padding: 5px;
@@ -638,7 +646,7 @@ input,textarea {
 	background: url(images/navi.png) repeat-x #d6d6d6;
 }
 
-.meta-tags a:hover,.meta-tags a:active {
+.meta-tags a:hover, .meta-tags a:active {
 	background: #eee;
 }
 
@@ -696,30 +704,30 @@ input,textarea {
 	font-size: 0.9em;
 }
 /*============================ Text Elements ============================*/
-.entry ul,.comment ul {
+.entry ul, .comment ul {
 	list-style: square inside;
 	margin: 0 0 20px 1.5em;
 }
 
-.entry ol,.comment ol {
+.entry ol, .comment ol {
 	list-style: decimal inside;
 	margin: 0 0 20px 1.5em;
 }
 
-.entry ol ol,.comment ol ol {
+.entry ol ol, .comment ol ol {
 	list-style: upper-alpha inside;
 }
 
-.entry ol ol ol,.comment ol ol ol {
+.entry ol ol ol, .comment ol ol ol {
 	list-style: lower-roman inside;
 }
 
-.entry ol ol ol ol,.comment ol ol ol ol {
+.entry ol ol ol ol, .comment ol ol ol ol {
 	list-style: lower-alpha inside;
 }
 
-.entry ul ul,.comment ul ul,.entry ol ol,.comment ol ol,.entry ul ol,.comment ul ol
-.entry ol ul,.comment ol ul {
+.entry ul ul, .comment ul ul, .entry ol ol, .comment ol ol, .entry ul ol, .comment ul ol
+.entry ol ul, .comment ol ul {
 	margin-bottom: 5px;
 }
 
@@ -739,7 +747,7 @@ strong {
 	font-weight: bold;
 }
 
-cite,em,i {
+cite, em, i {
 	font-style: italic;
 }
 
@@ -753,7 +761,7 @@ ins {
 	text-decoration: none;
 }
 
-code,pre {
+code, pre {
 	padding: 3px 8px;
 	margin: 0 1px;
 	background: #eeeeee;
@@ -763,7 +771,7 @@ code,pre {
 	overflow: auto;
 }
 
-del,strike,s {
+del, strike, s {
 	text-decoration: line-through;
 }
 
@@ -775,12 +783,12 @@ small {
 	font-size: 0.7em;
 }
 
-abbr,acronym {
+abbr, acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-sup,sub {
+sup, sub {
 	height: 0;
 	line-height: 1;
 	position: relative;
@@ -796,7 +804,7 @@ sub {
 	top: .5ex;
 }
 
-.entry var,.entry kbd,.entry tt {
+.entry var, .entry kbd, .entry tt {
 	font-size: 1.1em;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 }
@@ -831,7 +839,7 @@ blockquote:after {
 	font-family: "Times New Roman";
 }
 
-.entry table,.comment table {
+.entry table, .comment table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	border: 1px solid #ddd;
@@ -840,7 +848,7 @@ blockquote:after {
 	width: 100%;
 }
 
-.entry tr th,.comment tr th,.entry thead th,.comment thead th {
+.entry tr th, .comment tr th, .entry thead th, .comment thead th {
 	color: #555;
 	font-size: 1.0em;
 	font-weight: bold;
@@ -848,12 +856,12 @@ blockquote:after {
 	padding: 5px 15px;
 }
 
-.entry tr td,.comment tr td {
+.entry tr td, .comment tr td {
 	border-top: 1px solid #ddd;
 	padding: 5px 15px;
 }
 
-.entry tr.odd td,.comment try.odd td {
+.entry tr.odd td, .comment try.odd td {
 	background: #eee;
 }
 /*============================ POST Images ============================*/
@@ -938,7 +946,7 @@ blockquote:after {
 	float: right;
 }
 
-#image-nav .nav-previous a,#image-nav .nav-next a {
+#image-nav .nav-previous a, #image-nav .nav-next a {
 	padding: 7px 10px;
 	font-size: 0.9em;
 	font-weight: bold;
@@ -948,7 +956,7 @@ blockquote:after {
 	color: #000 !important;
 }
 
-#image-nav .nav-previous a:hover,#image-nav .nav-next a:hover {
+#image-nav .nav-previous a:hover, #image-nav .nav-next a:hover {
 	background: #eee;
 }
 /*============================ Featured Posts Slider ============================*/
@@ -988,7 +996,7 @@ blockquote:after {
 	float: right;
 }
 
-#slide_keys a:link,#slide_keys a:visited {
+#slide_keys a:link, #slide_keys a:visited {
 	font-size: 0.9em;
 	font-family: Arial, Verdana;
 	cursor: pointer;
@@ -1042,19 +1050,17 @@ blockquote:after {
 	background: none !important;
 }
 
-#comments a:link,#comments a:visited,#respond a:link,#respond a:visited
-	{
+#comments a:link, #comments a:visited, #respond a:link, #respond a:visited {
 	color: #444;
 	text-decoration: none;
 }
 
-#comments a:hover,#comments a:active,#respond a:hover,#respond a:active
-	{
+#comments a:hover, #comments a:active, #respond a:hover, #respond a:active {
 	color: #555;
 	text-decoration: underline;
 }
 
-.comment-meta a,.comment-meta a:link,.comment-meta a:visited {
+.comment-meta a, .comment-meta a:link, .comment-meta a:visited {
 	color: #222 !important;
 	text-decoration: none !important;
 }
@@ -1074,7 +1080,7 @@ blockquote:after {
 	text-align: left;
 }
 
-.commentlist .comment,.commentlist .pingback,.commentlist .trackback {
+.commentlist .comment, .commentlist .pingback, .commentlist .trackback {
 	list-style: none;
 	margin: 0 0 10px 0;
 	background: #fff;
@@ -1251,13 +1257,13 @@ blockquote:after {
 	background: url(images/topnavi.png) repeat;
 }
 
-#bottombar ul li ul,#bottombar ul li div {
+#bottombar ul li ul, #bottombar ul li div {
 	margin-bottom: 5px;
 	padding: 10px;
 	color: #ccc;
 }
 
-#bottombar ul li div ul,#bottombar ul li div ul li {
+#bottombar ul li div ul, #bottombar ul li div ul li {
 	border: none;
 	margin: 0 5px;
 	padding: 5px;
@@ -1268,17 +1274,17 @@ blockquote:after {
 	color: #ccc;
 }
 
-#bottombar a,#bottombar ul {
+#bottombar a, #bottombar ul {
 	font-size: 1.0em;
 	line-height: 1.2em;
 }
 
-#bottombar a:link,#bottombar a:visited {
+#bottombar a:link, #bottombar a:visited {
 	color: #fff;
 	text-decoration: underline;
 }
 
-#bottombar a:hover,#bottombar a:active {
+#bottombar a:hover, #bottombar a:active {
 	text-decoration: none;
 }
 

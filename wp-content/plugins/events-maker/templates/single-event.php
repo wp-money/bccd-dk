@@ -2,7 +2,7 @@
 
 	<div id="primary" class="site-content">
 
-		<div id="content" role="main">
+		<div id="content-event" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -15,8 +15,7 @@
 		        		<?php // Get event Display Options
 		        		$event_display_options = get_post_meta($post->ID, '_event_display_options', TRUE); ?>
 
-		                <?php // Display Google Map
-		                echo $event_display_options['google_map'] === 1 ? em_display_google_map() : ''; ?>
+		                
 
 		                <div class="entry-meta">
 		                
@@ -125,6 +124,9 @@
 	                <div class="entry-content description">
 	                    <?php the_content(); ?>
 	                </div>
+	                
+	                <?php // Display Google Map
+		                echo $event_display_options['google_map'] === 1 ? em_display_google_map() : ''; ?>
 
 	                <footer class="entry-meta">
 	                    <?php edit_post_link(__('Edit', 'events-maker'), '<span class="edit-link">', '</span>'); ?>
@@ -142,5 +144,4 @@
 
 	</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

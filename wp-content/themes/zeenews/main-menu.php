@@ -1,6 +1,6 @@
 <ul id="nav" class="menu">
-	<li>
-		<a href="/" title="Home"><img alt="Home" src="images/logoHome.png"></a>
+	<li class="first">
+		<a href="/" title="Home"><img alt="Home" src="<?php echo get_template_directory_uri(); ?>/images/logoHome.png"></a>
 	</li>
 	<li>
 		<a href="/Events/Event Listing.aspx" target="_self" title="Events">Events</a>
@@ -12,7 +12,7 @@
 		<?php get_template_part('sub','menu','news')
 		?>
 	</li>
-	<li>
+	<!-- <li>
 		<a href="/Membership/BCCD Sponsorship scheme.aspx" title="Members">Members</a>
 	</li>
 	<li>
@@ -26,5 +26,6 @@
 	</li>
 	<li>
 		<a href="/About-us/Our charter.aspx" title="About us">About us</a>
-	</li>
-</ul>
+	</li> 
+</ul>-->
+
