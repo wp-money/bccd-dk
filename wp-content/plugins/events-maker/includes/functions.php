@@ -637,16 +637,19 @@ function em_display_events($args = array())
 			$format = array('date' => $args['date_format'], 'time' => $args['time_format']);
 			$format_c = array('date' => 'Y-m-d', 'time' => '');
 			$same_dates = (bool)(em_format_date($start_date, 'date', $format_c) === em_format_date($end_date, 'date', $format_c));
-			$end_date_html = ' -
-				<span class="event-end-date post-date">
-					<abbr class="dtend" title="%s">%s</abbr>
-				</span>';
-
-			$html .= '
-			<li>
-				<span class="event-start-date post-date">
-					<abbr class="dtstart" title="'.$start_date.'">'.em_format_date($start_date, ($all_day_event === '0' ? 'datetime' : 'date'), $format).'</abbr>
-				</span>';
+			
+			$end_date_html ='';
+			// $end_date_html = ' -
+				// <span class="event-end-date post-date">
+					// <abbr class="dtend" title="%s">%s</abbr>
+				// </span>';
+// 
+			$html .= '';
+			// $html .= '
+			// <li>
+				// <span class="event-start-date post-date">
+					// <abbr class="dtstart" title="'.$start_date.'">'.em_format_date($start_date, ($all_day_event === '0' ? 'datetime' : 'date'), $format).'</abbr>
+				// </span>';
 
 			if($all_day_event === '1' && $same_dates === FALSE)
 				$html .= sprintf($end_date_html, $end_date, em_format_date($end_date, 'date', $format));
@@ -658,6 +661,7 @@ function em_display_events($args = array())
 
 			if($args['show_event_thumbnail'] === TRUE && has_post_thumbnail($events->post->ID))
 			{
+				// $html .= '';
 				$html .= '
 				<span class="event-thumbnail">
 					'.get_the_post_thumbnail($events->post->ID, $args['thumbnail_size']).'

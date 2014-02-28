@@ -22,7 +22,7 @@
 			<a href="/Events/Event Listing/2014/03/IT-security-and-crime-insurance.aspx">IT Security and IT Crime Insurance</a>
 		</li>
 		<li class="right">
-			<a href="/Events/Event Listing.aspx" title="see more events"><img src="/images/bccd/pixel.gif" alt="" class="moreArrow">See more events</a>
+			<a href="/Events/Event Listing.aspx" title="see more events"><img src="<?php echo get_template_directory_uri(); ?>/images/pixel.gif" alt="" class="moreArrow">See more events</a>
 		</li>
 	</ul>
 	<ul class="menuLinksList">

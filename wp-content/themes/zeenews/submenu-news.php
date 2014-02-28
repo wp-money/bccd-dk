@@ -34,7 +34,7 @@
 			<a href="/News/Latest News/2013/10/British-Airways-Increases-Choice.aspx">British Airways Increases Fare Choice Across All Short-Haul Flights</a>
 		</li>
 		<li class="right">
-			<a href="/News/Latest News.aspx" title="see more news"><img src="/images/bccd/pixel.gif" alt="see more news" class="moreArrow">See more news</a>
+			<a href="/News/Latest News.aspx" title="see more news"><img src="<?php echo get_template_directory_uri(); ?>/images/pixel.gif" alt="see more news" class="moreArrow">See more news</a>
 		</li>
 	</ul>
 	<ul class="menuLinksList">

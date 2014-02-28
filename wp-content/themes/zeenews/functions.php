@@ -22,6 +22,21 @@ function themezee_enqueue_scripts() {
 	// Register and enqueue the Malsup Cycle Plugin
 	wp_register_script('zee_jquery-cycle', get_template_directory_uri() .'/includes/js/jquery.cycle.all.min.js', array('jquery'));
 	wp_enqueue_script('zee_jquery-cycle');
+	
+	wp_register_script('zee_jquery-min', get_template_directory_uri() .'/includes/js/jquery-1.8.2.min.js', array('jquery'));
+	wp_enqueue_script('zee_jquery-min');
+	
+	wp_register_script('zee_jquery-cookie', get_template_directory_uri() .'/includes/js/jquery.cookie.js', array('jquery'));
+	wp_enqueue_script('zee_jquery-cookie');
+	
+	wp_register_script('zee_jquery-onload', get_template_directory_uri() .'/includes/js/onload.js', array('jquery'));
+	wp_enqueue_script('zee_jquery-onload');
+	
+	wp_register_script('zee_jquery-modernizr', get_template_directory_uri() .'/includes/js/modernizr.js', array('jquery'));
+	wp_enqueue_script('zee_jquery-modernizr');
+	
+	wp_register_script('zee_jquery-html5', get_template_directory_uri() .'/includes/js/html5shiv.js', array('jquery'));
+	wp_enqueue_script('zee_jquery-html5');
 }
 endif;
 

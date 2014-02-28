@@ -1475,3 +1475,22 @@ blockquote:after {
 img {
 	border: 0px none;
 }
+
+#mainMenu .subMenu {
+	background: url(images/topMenuBk.png) repeat-y right 0px #fff;
+	display: none;
+	left: 0px;
+	padding: 0px 0px 40px 40px;
+	position: absolute;
+	top: 50px;
+	width: 955px;
+	z-index: 5;
+}
+
+.overlay{
+	background: url(images/patternOverlay.png) repeat left top;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 4;
+}
