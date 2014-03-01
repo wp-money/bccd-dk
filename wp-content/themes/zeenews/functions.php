@@ -106,6 +106,9 @@ function themezee_register_sidebars() {
 	register_sidebar(array('name' => __('Sidebar Left', 'themezee_lang'), 'id' => 'sidebar-left'));
 	register_sidebar(array('name' => __('Sidebar Right', 'themezee_lang'), 'id' => 'sidebar-right'));
 	register_sidebar(array('name' => __('Sidebar Bottom', 'themezee_lang'), 'id' => 'sidebar-bottom'));
+	register_sidebar(array('name' => __('Sidebar Events Left', 'themezee_lang'), 'id' => 'sidebar-event-left'));
+	register_sidebar(array('name' => __('Sidebar Events Center', 'themezee_lang'), 'id' => 'sidebar-event-center'));
+	register_sidebar(array('name' => __('Sidebar Events Right', 'themezee_lang'), 'id' => 'sidebar-event-right'));
 
 	//Register Footer Bars
 	register_sidebar(array('name' => __('Footer Sidebar Left', 'themezee_lang'), 'id' => 'sidebar-footer-left'));

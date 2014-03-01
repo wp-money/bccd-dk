@@ -53,7 +53,6 @@
 	<?php themezee_header_after(); // hook after #header ?>
 
 	<div id="navi_wrap">
-		<div id="mainMenu">
 			<div id="navi">
 				<?php
 					// Get Navigation out of Theme Options
@@ -62,7 +61,6 @@
 					
 				?>
 			</div>
-		</div>
 		<div class="clear"></div>
 	</div>
 

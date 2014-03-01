@@ -625,8 +625,8 @@ function em_display_events($args = array())
 
 	if($events->have_posts())
 	{
-		$html = '
-		<ul>';
+		// $html = '
+		// <ul>';
 
 		while($events->have_posts())
 		{
@@ -638,30 +638,27 @@ function em_display_events($args = array())
 			$format_c = array('date' => 'Y-m-d', 'time' => '');
 			$same_dates = (bool)(em_format_date($start_date, 'date', $format_c) === em_format_date($end_date, 'date', $format_c));
 			
-			$end_date_html ='';
 			// $end_date_html = ' -
 				// <span class="event-end-date post-date">
 					// <abbr class="dtend" title="%s">%s</abbr>
 				// </span>';
 // 
-			$html .= '';
 			// $html .= '
 			// <li>
 				// <span class="event-start-date post-date">
 					// <abbr class="dtstart" title="'.$start_date.'">'.em_format_date($start_date, ($all_day_event === '0' ? 'datetime' : 'date'), $format).'</abbr>
 				// </span>';
-
+			$html = '';
 			if($all_day_event === '1' && $same_dates === FALSE)
 				$html .= sprintf($end_date_html, $end_date, em_format_date($end_date, 'date', $format));
 			elseif($all_day_event === '0')
 				$html .= sprintf($end_date_html, $end_date, em_format_date($end_date, ($same_dates === TRUE ? 'time' : 'datetime'), $format));
 
-			$html .= '
-				<br />';
+			// $html .= '
+				// <br />';
 
 			if($args['show_event_thumbnail'] === TRUE && has_post_thumbnail($events->post->ID))
 			{
-				// $html .= '';
 				$html .= '
 				<span class="event-thumbnail">
 					'.get_the_post_thumbnail($events->post->ID, $args['thumbnail_size']).'
@@ -669,8 +666,8 @@ function em_display_events($args = array())
 			}
 
 			$html .= '
-				<a class="event-title" href="'.get_permalink($events->post->ID).'">'.$events->post->post_title.'</a>
-				<br />';
+				<a class="event-title" href="'.get_permalink($events->post->ID).'">'.$events->post->post_title.'</a>';
+				// <br />';
 
 			if($args['show_event_excerpt'] === TRUE)
 				$html .= '
@@ -682,15 +679,15 @@ function em_display_events($args = array())
 			</li>';
 		}
 
-		$html .= '
-		</ul>';
+		// $html .= '
+		// </ul>';
 
 		return $html;
 	}
 	else
 		return $args['no_events_message'];
 }
-
+add_shortcode( 'display_events', 'em_display_events' );
 
 function em_display_google_map($args = array(), $locations = 0)
 {

@@ -373,6 +373,20 @@ input, textarea {
 	border-left: 1px solid #ddd;
 }
 
+#nav .subMenu ul {
+	border-left: 0px;
+}
+
+#navi ul {
+
+	height: 50px;
+	list-style: none;
+	margin: 0px auto 0px auto;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	width: 995px;
+}
+
 #nav li {
 	float: left;
 	position: relative;
@@ -383,7 +397,7 @@ input, textarea {
 	padding: 9px 24px;
 	color: #fff;
 	font-size: 12px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-decoration: none;
 	border-right: 1px solid #ccc;
 	text-transform: uppercase;
@@ -391,14 +405,23 @@ input, textarea {
 }
 
 #nav li a {
-	display: block;
+	display: inline-block;
 	padding: 9px 24px;
 	color: #fff;
 	font-size: 12px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-decoration: none;
 	border-right: 1px solid #ccc;
 	text-transform: uppercase;
+}
+
+#nav li:hover a {
+	background: #fff;
+	border-top: 3px solid #ec1a29;
+	border-bottom: 0px solid #fff;
+	color: #2d2d38;
+	line-height: 2.5;
+	z-index: 5;
 }
 
 #nav li.first:hover a {
@@ -408,34 +431,80 @@ input, textarea {
 	line-height: inherit;
 	z-index: 0px;
 }
-#nav li a:hover {
-	background: #fff;
-	border-top: 3px solid #ec1a29;
-	border-bottom: 3px solid #fff;
-	color: #2d2d38;
-	line-height: 2.1;
-	z-index: 5;
+/*#nav li a:hover {
+ background: #fff;
+ border-top: 3px solid #ec1a29;
+ border-bottom: 3px solid #fff;
+ color: #2d2d38;
+ line-height: 2.1;
+ z-index: 5;
+ }*/
+
+#nav .subMenu li:hover a {
+	color: #4d4db8;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+#nav .subMenu li a {
+	border-right: 0px;
+	/*color: #4d4db8;*/
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	display: block;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+#navi ul .subMenu li h2.widgettitle {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+}
+
+#navi li:hover .subMenu {
+	display: block;
+}
+
+#navi ul .subMenu ul {
+	border-top: 1px solid #cfcfcf;
+	float: left;
+	height: auto;
+	margin: 40px 40px 0px 0px;
+	width: 213px;
+}
+
+.menuInfo {
+	background: #eeeeee;
+	float: right;
+	height: 100%;
+	line-height: 1.4;
+	padding: 30px 30px 10px 30px;
+	width: 373px;
 }
 
 #nav ul {
-	position: absolute;
+	/*position: absolute;*/
 	display: none;
 	background: #fff;
-	border: 4px solid #d6d6d6;
+	/*border: 4px solid #d6d6d6;*/
 	z-index: 99;
 }
 
 #nav ul a {
-	width: 15em;
+	/*width: 15em;*/
 	padding: 12px 1em;
 	float: left;
 	color: #000;
 }
 
 #nav ul a:hover {
-	color: #333 !important;
-	background: none;
-	text-decoration: underline;
+	/*color: #333 !important;
+	 background: none;
+	 text-decoration: underline;*/
 }
 
 #nav ul ul {
@@ -451,7 +520,7 @@ input, textarea {
 }
 
 #nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul {
-	display: block;
+	display: block !important;
 }
 /*============================ More_Posts, Calendar ============================*/
 #wp-calendar {
@@ -1476,10 +1545,10 @@ img {
 	border: 0px none;
 }
 
-#mainMenu .subMenu {
+#navi .subEvent {
 	background: url(images/topMenuBk.png) repeat-y right 0px #fff;
-	display: none;
 	left: 0px;
+	margin-left: -66px;
 	padding: 0px 0px 40px 40px;
 	position: absolute;
 	top: 50px;
@@ -1487,10 +1556,32 @@ img {
 	z-index: 5;
 }
 
-.overlay{
+#navi .subMenu {
+	display: none;
+}
+
+#navi .subNews {
+	background: url(images/topMenuBk.png) repeat-y right 0px #fff;
+	left: 0px;
+	margin-left: -160px;
+	padding: 0px 0px 40px 40px;
+	position: absolute;
+	top: 50px;
+	width: 955px;
+	z-index: 5;
+}
+
+.overlay {
 	background: url(images/patternOverlay.png) repeat left top;
 	height: 100%;
 	position: fixed;
 	width: 100%;
-	z-index: 4;
+	z-index: 0;
+}
+
+#navi ul .subMenu li {
+	float: none;
+	border-right: 0px;
+	border-bottom: 1px solid #cfcfcf;
+	margin: 0px 0px 0px 0px;
 }

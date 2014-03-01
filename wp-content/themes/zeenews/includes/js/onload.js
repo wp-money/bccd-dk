@@ -433,7 +433,7 @@ hideValues();
     /* ================================================= */
     /* MENU SECTION */
 
-    jQuery('#mainMenu > div > ul > li').hover(function () {
+    jQuery('#navi > ul > li').hover(function () {
         if (jQuery(this).children('.subMenu').size() > 0) {
             jQuery('body').prepend(overlayLayer);
         }
@@ -442,6 +442,10 @@ hideValues();
 	    jQuery('.overlay').remove();
 
 	});
+    
+    // jQuery('#navi > ul').mouseout(function () {
+	    // jQuery('.overlay').remove();
+    // });
 
 
     /* ================================================= */
