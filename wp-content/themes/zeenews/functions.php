@@ -16,6 +16,12 @@ function themezee_enqueue_scripts() {
 	wp_register_style('zeeNews_stylesheet', get_stylesheet_uri());
 	wp_enqueue_style('zeeNews_stylesheet');
 	
+	wp_register_style('zeeNews_sub-menu', get_template_directory_uri() .'/sub-menu.css');
+	wp_enqueue_style('zeeNews_sub-menu');
+	
+	wp_register_style('zeeNews_detail-event', get_template_directory_uri() .'/css/detail-event.css');
+	wp_enqueue_style('zeeNews_detail-event');
+	
 	// Enqueue jQuery Framework
 	wp_enqueue_script('jquery');
 	

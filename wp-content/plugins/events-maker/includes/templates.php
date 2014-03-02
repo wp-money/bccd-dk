@@ -51,7 +51,8 @@ class Events_Maker_Templates
 		}
 
 		if(is_singular('event') && !$this->is_template($template, 'event'))
-			$template = EVENTS_MAKER_PATH.'templates/single-event.php';
+			// $template = EVENTS_MAKER_PATH.'templates/single-event.php';
+			$template = EVENTS_MAKER_PATH.'templates/detail-event.php';
 
 		return $template;
 	}
@@ -67,7 +68,8 @@ class Events_Maker_Templates
 		switch($context)
 		{
 			case 'event';	
-				return ($template === 'single-event.php');
+				// return ($template === 'single-event.php');
+				return ($template === 'detail-event.php');
 
 			case 'archive':
 				return ($template === 'archive-event.php');

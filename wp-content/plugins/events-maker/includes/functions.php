@@ -643,12 +643,11 @@ function em_display_events($args = array())
 					// <abbr class="dtend" title="%s">%s</abbr>
 				// </span>';
 // 
-			// $html .= '
-			// <li>
+			$html .= '
+				<li>';
 				// <span class="event-start-date post-date">
 					// <abbr class="dtstart" title="'.$start_date.'">'.em_format_date($start_date, ($all_day_event === '0' ? 'datetime' : 'date'), $format).'</abbr>
 				// </span>';
-			$html = '';
 			if($all_day_event === '1' && $same_dates === FALSE)
 				$html .= sprintf($end_date_html, $end_date, em_format_date($end_date, 'date', $format));
 			elseif($all_day_event === '0')
@@ -676,7 +675,7 @@ function em_display_events($args = array())
 				</span>';
 
 			$html .= '
-			</li>';
+				</li>';
 		}
 
 		// $html .= '

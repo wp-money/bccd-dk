@@ -1,0 +1,124 @@
+#nav .subMenu ul {
+	border-left: 0px;
+}
+
+#nav .subMenu li:hover a {
+	color: #4d4db8;
+	border-top: 1px solid #cfcfcf;
+	/*border-bottom: 1px solid #cfcfcf;*/
+}
+
+#nav .subMenu li a {
+	border-right: 0px;
+	/*color: #4d4db8;*/
+	border-top: 1px solid #cfcfcf;
+	/*border-bottom: 1px solid #cfcfcf;*/
+	display: block;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+	width: 213px;
+}
+
+#navi ul .subMenu li h2.widgettitle {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px 0px 10px 0px;
+}
+
+#navi li:hover .subMenu {
+	display: block;
+}
+
+#navi ul .subMenu ul {
+	border-top: 1px solid #cfcfcf;
+	float: left;
+	height: auto;
+	margin: 40px 40px 0px 0px;
+	width: 213px;
+}
+
+#navi .subMenu {
+	display: none;
+	background: url(images/topMenuBk.png) repeat-y right 0px #fff;
+	left: 0px;
+	margin-left: -1px;
+	padding: 0px 0px 40px 40px;
+	position: absolute;
+	top: 50px;
+	width: 955px;
+	z-index: 5;
+}
+
+#navi ul .subMenu li {
+	float: none;
+	border-right: 0px;
+	/*border-bottom: 1px solid #cfcfcf;*/
+	margin: 0px 0px 0px 0px;
+}
+
+#navi ul li .menuListNewsEvents .right {
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+#navi ul li .menuListNewsEvents .right img {
+	background: url("images/sprites01.png") no-repeat scroll -20px -2px transparent;
+	display: inline-block;
+	height: 10px;
+	margin: 0px 5px 0px 0px;
+	width: 10px;
+}
+
+.menuInfo {
+	background: #eeeeee;
+	float: right;
+	height: 100%;
+	line-height: 1.4;
+	padding: 30px 30px 10px 30px;
+	width: 373px;
+}
+
+.menuInfo .img {
+	margin: 0px 0px 10px 0px;
+	min-height: 95px;
+	position: relative;
+}
+
+.menuInfo .category {
+	color: #9e9e9e;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menuInfo .info {
+	font-size: 15px;
+	margin: 0px 0px 10px 0px;
+}
+
+.menuInfo .bookNow {
+	color: #757575;
+	font-size: 14px;
+	margin: 0px 0px 10px 0px;
+}
+
+.menuInfo p {
+	line-height: 1.4;
+	margin: 0px 0px 5px 0px;
+}
+
+img {
+	border: 0px none;
+}
+
+.overlay {
+	background: url(images/patternOverlay.png) repeat left top;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 0;
+}

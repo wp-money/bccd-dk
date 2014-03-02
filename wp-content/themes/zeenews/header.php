@@ -64,6 +64,5 @@
 		<div class="clear"></div>
 	</div>
 
-
-
+<!-- start wrap -->
 	<div id="wrap">
