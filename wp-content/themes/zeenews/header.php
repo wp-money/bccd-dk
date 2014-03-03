@@ -51,7 +51,7 @@
 		</div>
 	</div>
 	<?php themezee_header_after(); // hook after #header ?>
-
+	<?php do_shortcode('[title_event_list]'); ?>	
 	<div id="navi_wrap">
 			<div id="navi">
 				<?php
