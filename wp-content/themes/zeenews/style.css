@@ -352,7 +352,7 @@ input, textarea {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	width: 100%;
-	line-height: 2.6;
+	line-height: 2.5;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
 	border-bottom: 1px solid #ccc;
@@ -394,8 +394,8 @@ input, textarea {
 	display: block;
 	padding: 9px 24px;
 	color: #fff;
-	font-size: 12px;
-	/*font-weight: bold;*/
+	font-size: 13px;
+	
 	text-decoration: none;
 	border-right: 1px solid #ccc;
 	text-transform: uppercase;
@@ -406,8 +406,8 @@ input, textarea {
 	display: inline-block;
 	padding: 9px 24px;
 	color: #fff;
-	font-size: 12px;
-	/*font-weight: bold;*/
+	font-size: 13px;
+	font-weight: bold;
 	text-decoration: none;
 	border-right: 1px solid #ccc;
 	text-transform: uppercase;
