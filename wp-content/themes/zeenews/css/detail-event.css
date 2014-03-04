@@ -52,7 +52,24 @@
 	padding: 0px 0px 10px 0px;
 }
 
+.eventHeader .info li p{
+	float: left;
+	width: 90%;
+}
+
+.eventHeader .info li a{
+	float:left;
+	width: 100%;
+}
+
+.eventHeader .info li a .event-start-date{
+	float: left;
+}
+
+
+
 .eventHeader .info li .iconLocation {
+	float:left;
 	background: url(../images/sprites01.png) no-repeat -193px 0px;
 }
 
@@ -61,7 +78,7 @@
 }
 
 .eventHeader .info li .iconHour {
-	background: url(../images/bccd/sprites01.png) no-repeat -241px -1px;
+	background: url(../images/sprites01.png) no-repeat -241px -1px;
 }
 
 .btnSignUp, .btnSignUpEvent {
@@ -111,7 +128,7 @@
 }
 
 .eventHeader .eventsNav li img {
-	background: url(../images/bccd/sprites01.png) no-repeat -20px -2px;
+	background: url(../images/sprites01.png) no-repeat -20px -2px;
 	display: inline-block;
 	height: 10px;
 	margin: 0px 0px 0px 0px;
@@ -213,4 +230,13 @@
 .tabLocation .rCol {
 	float: right;
 	width: 540px;
+}
+
+.eventHeader .info li .iconLocation {
+	background: url(../images/sprites01.png) no-repeat -193px 0px;
+}
+
+.eventHeader .info li .iconDate{
+	float:left;
+	background: url(../images/sprites01.png) no-repeat -216px 0px;
 }

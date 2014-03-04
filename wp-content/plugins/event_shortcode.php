@@ -19,6 +19,25 @@ function show_title($atts, $content=null) {
 	}
     return "";
 }
+
+add_shortcode('title_event','show_title');
+
+
+function show_custom_field($atts, $content=null) {
+	global $wpdb;
+	$query ="SELECT * FROM wp_postsmeta where post_type = 'event'";
+	$listpost = $wpdb->get_results($query);
+	
+	
+	
+	
+	
+	foreach ($listpost as $value)
+	{
+		echo "$value->post_title";
+	}
+    return "";
+}
  
 add_shortcode('title_event','show_title');
  
