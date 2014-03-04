@@ -157,7 +157,7 @@
 	<div class="eventHeader">
 		<div class="leftCol">
 			<p class="date">
-				07.03.2014
+				<?php echo $event_start; ?>
 			</p><h1><?php the_title(); ?></h1>
 			<div class="body">
 				<p>
