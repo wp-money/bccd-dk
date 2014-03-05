@@ -1,3 +1,55 @@
+#topMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+
+.extraMenu {
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.extraMenu li {
+	line-height: 12px;
+	float: left;
+	padding: 8px 10px 10px 10px;
+}
+
+.extraMenu li a {
+	color: #555555;
+	line-height: 12px;
+	padding: 0px 0px 0px 0px;
+	text-decoration: blink;
+}
+
+.socialMediaMenu {
+	float: right;
+	font-size: 10px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+.socialMediaMenu li {
+	line-height: 12px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 7px 5px 6px 5px;
+}
+
+.socialMediaMenu li a {
+	color: #555555;
+	line-height: 12px;
+	padding: 0px 0px 0px 0px;
+}
+
 #nav .subMenu ul {
 	border-left: 0px;
 }
@@ -152,22 +204,22 @@
 	padding: 0px 0px 0px 0px;
 	text-transform: none;
 }
-.menuInfo .bookNow{
+.menuInfo .bookNow {
 	zoom: 1;
 }
 
 #navi ul li .subMenu .bookNow a {
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-background: #ec1a29;
-border: 1px solid #9f1f1e;
-color: #fff;
-float: right;
-padding: 5px 10px 5px 10px;
-position: relative;
-text-transform: uppercase;
-top: -5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #ec1a29;
+	border: 1px solid #9f1f1e;
+	color: #fff;
+	float: right;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+	text-transform: uppercase;
+	top: -5px;
 }
 
 img {

@@ -20,8 +20,9 @@
 		<div id="topnavi_wrap">
 			<div id="topnavi">
 				<?php
+				get_template_part('top', 'menu');
 				// Get Navigation out of Theme Options
-					wp_nav_menu(array('theme_location' => 'top_navi', 'container' => false, 'menu_id' => 'topnav', 'echo' => true, 'fallback_cb' => 'themezee_default_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'depth' => 0));
+				// wp_nav_menu(array('theme_location' => 'top_navi', 'container' => false, 'menu_id' => 'topnav', 'echo' => true, 'fallback_cb' => 'themezee_default_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'depth' => 0));
 				?>
 			</div>
 			<div class="clear"></div>
