@@ -21,7 +21,7 @@
 			<div id="topnavi">
 				<?php
 				// Get Navigation out of Theme Options
-					wp_nav_menu(array('theme_location' => 'top_navi', 'container' => false, 'menu_id' => 'topnav', 'echo' => true, 'fallback_cb' => '', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'depth' => 0));
+					wp_nav_menu(array('theme_location' => 'top_navi', 'container' => false, 'menu_id' => 'topnav', 'echo' => true, 'fallback_cb' => 'themezee_default_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'depth' => 0));
 				?>
 			</div>
 			<div class="clear"></div>
@@ -51,7 +51,6 @@
 		</div>
 	</div>
 	<?php themezee_header_after(); // hook after #header ?>
-	<?php do_shortcode('[title_event_list]'); ?>	
 	<div id="navi_wrap">
 			<div id="navi">
 				<?php

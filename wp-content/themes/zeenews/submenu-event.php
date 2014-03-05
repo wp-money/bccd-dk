@@ -44,14 +44,15 @@
 	</ul>
 	<div class="menuInfo">
 		<div class="img">
-			<!-- <span class="date">28<span>Feb</span></span> -->
+			<span class="date">28<span>Feb</span></span>
 		</div>
 		<p class="category">
 			Next Event
 		</p>
-		<!-- <h2>US Ambassador to Denmark Rufus Gifford, “2014: An American Perspective”</h2> -->
+		<h2>US Ambassador to Denmark Rufus Gifford, “2014: An American Perspective”</h2>
 		<p class="info">
-			<!-- February Business Lunch with the US Ambassador<a href="/Events/Event Listing/2014/02/February-Lunch-Rufus-Gifford.aspx" title="read more"></a> -->
+			February Business Lunch with the US Ambassador
+			<a href="/Events/Event Listing/2014/02/February-Lunch-Rufus-Gifford.aspx" title="read more"></a>
 		</p>
 		<p class="bookNow">
 			<a href="/Events/Event Sign Up.aspx" title="Book now">Book now</a>

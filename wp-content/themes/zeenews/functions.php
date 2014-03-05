@@ -180,8 +180,8 @@ function themezee_wp_title( $title, $sep = '' ) {
 
 // Add Default Menu Fallback Function
 function themezee_default_menu() {
-	// echo '<ul id="nav" class="menu">'. wp_list_pages('title_li=&echo=0') .'</ul>';
-	echo ''. wp_list_pages('title_li=&echo=0') .'</ul>';
+	echo '<ul id="nav" class="menu">'. wp_list_pages('title_li=&echo=0') .'</ul>';
+	// echo ''. wp_list_pages('title_li=&echo=0') .'</ul>';
 }
 
 

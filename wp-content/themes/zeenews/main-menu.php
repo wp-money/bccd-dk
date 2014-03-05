@@ -12,20 +12,4 @@
 		<?php get_template_part('submenu','news')
 		?>
 	</li>
-	<!-- <li>
-		<a href="/Membership/BCCD Sponsorship scheme.aspx" title="Members">Members</a>
-	</li>
-	<li>
-		<a href="/Scholarships/Information about the Scheme.aspx" title="Scholarships">Scholarships</a>
-	</li>
-	<li>
-		<a href="/COBCOE3/COBCOE2/what-is-cobcoe2.aspx" title="COBCOE">COBCOE</a>
-	</li>
-	<li>
-		<a href="/Resources/Links/Denmark.aspx" title="Resources">Resources</a>
-	</li>
-	<li>
-		<a href="/About-us/Our charter.aspx" title="About us">About us</a>
-	</li> 
-</ul>-->
 
