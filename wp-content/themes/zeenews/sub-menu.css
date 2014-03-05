@@ -11,6 +11,7 @@
 #nav .subMenu li a {
 	border-right: 0px;
 	/*color: #4d4db8;*/
+	font-weight: normal;
 	border-top: 1px solid #cfcfcf;
 	/*border-bottom: 1px solid #cfcfcf;*/
 	display: block;
