@@ -53,7 +53,7 @@
 		</p>
 		<h2><?php do_shortcode('[_nearest_event_show_title]'); ?></h2>
 		<p class="info">
-			February Business Lunch with the US Ambassador
+			<?php do_shortcode('[_nearest_event_show_content]'); ?>
 			<a href="/Events/Event Listing/2014/02/February-Lunch-Rufus-Gifford.aspx" title="read more"></a>
 		</p>
 		<p class="bookNow">

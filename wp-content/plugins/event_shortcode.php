@@ -102,3 +102,22 @@ function nearest_event_show_title ($atts, $content=null) {
 }
 add_shortcode('_nearest_event_show_title','nearest_event_show_title');
 
+function nearest_event_show_content ($atts, $content=null) {
+	global $wpdb;
+	$query ="Select p.post_content 
+	From wp_posts p, wp_postmeta pm Where 
+	p.ID = pm.post_id  AND pm.meta_key = '_event_start_date' 
+	ORDER BY pm.meta_value ASC
+	LIMIT 1
+	";
+
+	$listpost = $wpdb->get_results($query);
+	
+	foreach ($listpost as $value)
+	{
+		echo "$value->post_content";
+	}
+    return "";
+}
+add_shortcode('_nearest_event_show_content','nearest_event_show_content');
+
