@@ -91,7 +91,7 @@
 						<a href="/en/Events/Event Listing/2014/02/God-of-Carnage.aspx">Next event:&nbsp;
 							God of Carnage &nbsp; <img src="<?php echo get_template_directory_uri(); ?>/images/pixel.gif" alt="next"></a>
 						</li>
-					</ul>
+			</ul>
 				</div>
 				<div class="contentTabs">
 					<ul class="tabsNav">
@@ -139,34 +139,23 @@
 						</li>
 					</ul>
 				</div>
-				
-				<div class="contentTabs">
-					<?php
-					// $keys = get_post_custom($post->ID);
-					//
-					// // check if the custom field has a value
-					// $my_custom_field = $key_1_value['decvgjhjhj'];
-					// foreach ( $keys as $key => $value)
-					// {
-					// echo ''.$keys . " => " . $value . "<br />";
-					// }
-					//
-					global $wpdb;
-					$query = "SELECT * FROM wp_postmeta where post_id = ".$post -> ID;
-					$listpost = $wpdb -> get_results($query);
-					
-					foreach ( $listpost as $post_index => $post_meta_value)
-					{
-						echo ''.$post_meta_value->meta_key . " => " . $post_meta_value->meta_value . "<br />";
+				<?php
+				global $wpdb;
+				$query = "SELECT * FROM wp_postmeta where post_id = " . $post -> ID;
+				$listpost = $wpdb -> get_results($query);
+				$htmlTabsNav = '';
+				$htmlTabsContent = '';
+				foreach ($listpost as $post_index => $post_meta_value) {
+					if ($post_index == 0) {
+						$htmlTabsNav . '<li class="active">' . $post_meta_value -> meta_key . '</li> ';
+						$htmlTabsContent . '<li class="active">' . $post_meta_value -> meta_value . '</li> ';
+					} else {
+						$htmlTabsNav . '<li class="">' . $post_meta_value -> meta_key . '</li> ';
+						$htmlTabsContent . '<li class="">' . $post_meta_value -> meta_value . '</li> ';
 					}
-					?>
-				</div>
+				}
+				?>
 			</div>
-
-			<!-- =================== -->
-
-
-
 		<?php endwhile; // end of the loop. ?>
 
 	</div>
