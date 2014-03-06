@@ -44,14 +44,16 @@
 	</ul>
 	<div class="menuInfo">
 		<div class="img">
-			<span class="date">28<span>Feb</span></span>
+			<span class="date">
+				<?php do_shortcode('[_nearest_event_show_day]'); ?>
+				<span>Feb</span></span>
 		</div>
 		<p class="category">
 			Next Event
 		</p>
-		<h2>US Ambassador to Denmark Rufus Gifford, “2014: An American Perspective”</h2>
+		<h2><?php do_shortcode('[_nearest_event_show_title]'); ?></h2>
 		<p class="info">
-			February Business Lunch with the US Ambassador
+			<?php do_shortcode('[_nearest_event_show_content]'); ?>
 			<a href="/Events/Event Listing/2014/02/February-Lunch-Rufus-Gifford.aspx" title="read more"></a>
 		</p>
 		<p class="bookNow">
