@@ -44,7 +44,9 @@
 	</ul>
 	<div class="menuInfo">
 		<div class="img">
-			<span class="date">28<span>Feb</span></span>
+			<span class="date">
+				<?php do_shortcode('[_nearest_event_show_day]'); ?>
+				<span>Feb</span></span>
 		</div>
 		<p class="category">
 			Next Event
