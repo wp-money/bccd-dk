@@ -46,7 +46,7 @@
 		<div class="img">
 			<span class="date">
 				<?php do_shortcode('[_nearest_event_show_day]'); ?>
-				<span>Feb</span></span>
+				<span></span></span>
 		</div>
 		<p class="category">
 			Next Event
