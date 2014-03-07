@@ -3,6 +3,7 @@
 </div><!-- end #wrapper -->
 
 <div id="foot_wrap">
+	 <?php echo do_shortcode('[print_thumbnail_slider]');?> 
 		<?php if(is_active_sidebar('sidebar-footer-left') or is_active_sidebar('sidebar-footer-center-left') or is_active_sidebar('sidebar-footer-center-right') or is_active_sidebar('sidebar-footer-right')) : ?>
 		<div id="bottombar">
 			<ul class="bottombar_item">
