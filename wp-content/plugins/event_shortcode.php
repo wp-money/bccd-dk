@@ -34,24 +34,9 @@ function show_custom_field($atts, $content = null) {
 
 add_shortcode('custom_field', 'show_custom_field');
 
-
 function nearest_event_show_day() {
 
-		$args = array(
-		'posts_per_page' => 1,
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
+	$args = array('posts_per_page' => 1, 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
 
 	$listpost = get_posts($args);
 
@@ -72,26 +57,12 @@ function nearest_event_show_day() {
 add_shortcode('_nearest_event_show_day', 'nearest_event_show_day');
 
 function nearest_event_show_title($atts, $content = null) {
-	$args = array(
-		'posts_per_page' => 1,
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
-		
-		$listpost = get_posts($args);
-		foreach ($listpost as $value) {
-			echo $value->post_title;
-		}
+	$args = array('posts_per_page' => 1, 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	foreach ($listpost as $value) {
+		echo $value -> post_title;
+	}
 
 	return "";
 }
@@ -100,26 +71,12 @@ add_shortcode('_nearest_event_show_title', 'nearest_event_show_title');
 
 function nearest_event_show_content() {
 
-	$args = array(
-		'posts_per_page' => 1,
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
-		
-		$listpost = get_posts($args);
-		foreach ($listpost as $value) {
-			echo $value->post_content;
-		}
+	$args = array('posts_per_page' => 1, 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	foreach ($listpost as $value) {
+		echo $value -> post_content;
+	}
 	return "";
 }
 
@@ -127,30 +84,15 @@ add_shortcode('_nearest_event_show_content', 'nearest_event_show_content');
 
 function nearest_event_show_content_index($arr_param, $content) {
 
-	$args = array(
-		'posts_per_page' => $arr_param['event_index'],
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
-		
-		$listpost = get_posts($args);
-		$value = $listpost[$arr_param['event_index'] -1];
-		echo $value->post_content;
-		
-		
-		// foreach ($listpost as $value) {
-			// echo $value->post_content;
-		// }
+	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	$value = $listpost[$arr_param['event_index'] - 1];
+	echo $value -> post_content;
+
+	// foreach ($listpost as $value) {
+	// echo $value->post_content;
+	// }
 	return "";
 }
 
@@ -158,30 +100,15 @@ add_shortcode('_nearest_event_show_content_index', 'nearest_event_show_content_i
 
 function nearest_event_show_title_index($arr_param, $content) {
 
-	$args = array(
-		'posts_per_page' => $arr_param['event_index'],
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
-		
-		$listpost = get_posts($args);
-		$value = $listpost[$arr_param['event_index'] -1];
-		echo $value->post_title;
-		
-		
-		// foreach ($listpost as $value) {
-			// echo $value->post_content;
-		// }
+	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	$value = $listpost[$arr_param['event_index'] - 1];
+	echo $value -> post_title;
+
+	// foreach ($listpost as $value) {
+	// echo $value->post_content;
+	// }
 	return "";
 }
 
@@ -189,31 +116,36 @@ add_shortcode('_nearest_event_show_title_index', 'nearest_event_show_title_index
 
 function nearest_event_show_link_index($arr_param, $content) {
 
-	$args = array(
-		'posts_per_page' => $arr_param['event_index'],
-		'offset' => 0,
-		'category' => '',
-		'orderby' => '',
-		'order' => 'ASC',
-		'include' => '',
-		'exclude' => '',
-		'meta_key' => '_event_start_date',
-		'meta_value' => '',
-		'post_type' => 'event',
-		'post_mime_type' => '',
-		'post_parent' => '',
-		'post_status' => 'publish',
-		'suppress_filters' => true);
-		
-		$listpost = get_posts($args);
-		$value = $listpost[$arr_param['event_index'] -1];
-		echo $value->guid;
-		
-		
-		// foreach ($listpost as $value) {
-			// echo $value->post_content;
-		// }
+	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	$value = $listpost[$arr_param['event_index'] - 1];
+	echo $value -> guid;
+
+	// foreach ($listpost as $value) {
+	// echo $value->post_content;
+	// }
 	return "";
 }
 
 add_shortcode('_nearest_event_show_link_index', 'nearest_event_show_link_index');
+
+function nearest_event_show_cat_index($arr_param, $content) {
+
+	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	$value = $listpost[$arr_param['event_index'] - 1];
+	echo "$value->ID";
+	$event_cat = get_the_term_list( $value->ID, 'event-category', '', ', ','');
+
+
+	echo $event_cat;
+
+	// foreach ($listpost as $value) {
+	// echo $value->post_content;
+	// }
+	return "";
+}
+
+add_shortcode('_nearest_event_show_cat_index', 'nearest_event_show_cat_index');
