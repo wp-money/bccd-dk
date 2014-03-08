@@ -22,6 +22,9 @@ function themezee_enqueue_scripts() {
 	wp_register_style('zeeNews_detail-event', get_template_directory_uri() .'/css/detail-event.css');
 	wp_enqueue_style('zeeNews_detail-event');
 	
+	wp_register_style('zeeNews_event-list', get_template_directory_uri() .'/css/event-list.css');
+	wp_enqueue_style('zeeNews_event-list');
+	
 	// Enqueue jQuery Framework
 	wp_enqueue_script('jquery');
 	

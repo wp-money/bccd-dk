@@ -2,7 +2,7 @@
 
 	<div id="content">
 		
-		<?php 
+		<!-- <?php 
 		$options = get_option('themezee_options');
 		if(is_home() and isset($options['themeZee_show_slider']) and $options['themeZee_show_slider'] == 'true') {
 			locate_template('/slideshow.php', true);
@@ -27,9 +27,9 @@
 				<div class="clear"></div>
 			<?php }?>
 
-		<?php endif; ?>
+		<?php endif; ?> -->
 			
 	</div>
 	
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>

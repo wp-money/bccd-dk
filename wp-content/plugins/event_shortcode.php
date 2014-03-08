@@ -124,3 +124,96 @@ function nearest_event_show_content() {
 }
 
 add_shortcode('_nearest_event_show_content', 'nearest_event_show_content');
+
+function nearest_event_show_content_index($arr_param, $content) {
+
+	$args = array(
+		'posts_per_page' => $arr_param['event_index'],
+		'offset' => 0,
+		'category' => '',
+		'orderby' => '',
+		'order' => 'ASC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '_event_start_date',
+		'meta_value' => '',
+		'post_type' => 'event',
+		'post_mime_type' => '',
+		'post_parent' => '',
+		'post_status' => 'publish',
+		'suppress_filters' => true);
+		
+		$listpost = get_posts($args);
+		$value = $listpost[$arr_param['event_index'] -1];
+		echo $value->post_content;
+		
+		
+		// foreach ($listpost as $value) {
+			// echo $value->post_content;
+		// }
+	return "";
+}
+
+add_shortcode('_nearest_event_show_content_index', 'nearest_event_show_content_index');
+
+function nearest_event_show_title_index($arr_param, $content) {
+
+	$args = array(
+		'posts_per_page' => $arr_param['event_index'],
+		'offset' => 0,
+		'category' => '',
+		'orderby' => '',
+		'order' => 'ASC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '_event_start_date',
+		'meta_value' => '',
+		'post_type' => 'event',
+		'post_mime_type' => '',
+		'post_parent' => '',
+		'post_status' => 'publish',
+		'suppress_filters' => true);
+		
+		$listpost = get_posts($args);
+		$value = $listpost[$arr_param['event_index'] -1];
+		echo $value->post_title;
+		
+		
+		// foreach ($listpost as $value) {
+			// echo $value->post_content;
+		// }
+	return "";
+}
+
+add_shortcode('_nearest_event_show_title_index', 'nearest_event_show_title_index');
+
+function nearest_event_show_link_index($arr_param, $content) {
+
+	$args = array(
+		'posts_per_page' => $arr_param['event_index'],
+		'offset' => 0,
+		'category' => '',
+		'orderby' => '',
+		'order' => 'ASC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '_event_start_date',
+		'meta_value' => '',
+		'post_type' => 'event',
+		'post_mime_type' => '',
+		'post_parent' => '',
+		'post_status' => 'publish',
+		'suppress_filters' => true);
+		
+		$listpost = get_posts($args);
+		$value = $listpost[$arr_param['event_index'] -1];
+		echo $value->guid;
+		
+		
+		// foreach ($listpost as $value) {
+			// echo $value->post_content;
+		// }
+	return "";
+}
+
+add_shortcode('_nearest_event_show_link_index', 'nearest_event_show_link_index');
