@@ -132,20 +132,37 @@ add_shortcode('_nearest_event_show_link_index', 'nearest_event_show_link_index')
 
 function nearest_event_show_cat_index($arr_param, $content) {
 
-	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
 
-	$listpost = get_posts($args);
-	$value = $listpost[$arr_param['event_index'] - 1];
-	echo "$value->ID";
-	$event_cat = get_the_term_list( $value->ID, 'event-category', '', ', ','');
+$listpost = get_posts($args);
+$value = $listpost[$arr_param['event_index'] - 1];
+echo "$value->ID";
+$event_cat = get_the_term_list( $value->ID, 'event-category', '', ', ','');
 
 
-	echo $event_cat;
+echo $event_cat;
 
-	// foreach ($listpost as $value) {
-	// echo $value->post_content;
-	// }
-	return "";
+// foreach ($listpost as $value) {
+// echo $value->post_content;
+// }
+return "";
 }
 
 add_shortcode('_nearest_event_show_cat_index', 'nearest_event_show_cat_index');
+
+function nearest_event_show_imgURL_index($arr_param, $content) {
+
+	$args = array('posts_per_page' => $arr_param['event_index'], 'offset' => 0, 'category' => '', 'orderby' => '', 'order' => 'ASC', 'include' => '', 'exclude' => '', 'meta_key' => '_event_start_date', 'meta_value' => '', 'post_type' => 'event', 'post_mime_type' => '', 'post_parent' => '', 'post_status' => 'publish', 'suppress_filters' => true);
+
+	$listpost = get_posts($args);
+	// echo wp_get_attachment_url(get_post_thumbnail_id($value->ID));
+
+	foreach ($listpost as $index => $value) {
+		if ($index == ($arr_param['event_index'] - 1)) {
+			echo wp_get_attachment_url(get_post_thumbnail_id($value -> ID));
+		}
+	}
+	return "";
+}
+
+add_shortcode('_nearest_event_show_imgURL_index', 'nearest_event_show_imgURL_index');
