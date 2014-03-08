@@ -57,15 +57,6 @@
 				<?php endif; ?>
 			</a>
 		</li>
-					<!-- <li>
-						<img src="/images/bccd/pixel.gif" alt="" class="iconHour">
-						<?php // Display Event Start ?>
-			                <?php $event_start = em_get_the_start($post -> ID) ? em_get_the_start($post -> ID) : ''; ?>
-			                <?php if ($event_start) : ?>
-			                	<?php $event_start = em_is_all_day($post -> ID) === TRUE ? em_get_the_start($post -> ID, 'time()') : em_get_the_start($post -> ID); ?>
-			                	<div class="event-start-date"><strong><?php _e('Start', 'events-maker'); ?>: </strong><abbr class="dtstart" title="<?php echo get_post_meta((int)$post -> ID, '_event_start_date', TRUE); ?>"><?php echo $event_start; ?></abbr></div>
-			                <?php endif; ?>
-			            </li> -->
 			        </ul>
 			        <p class="btnSignUpEvent">
 			        	<a href="/en/Events/Event Sign Up.aspx" title="Event Sign-up">Sign up for event</a>
